@@ -1,30 +1,27 @@
+import { LinkButton } from "@/components/elements/Card";
 import Link from "next/link";
 
-export const Header: React.FC = () => {
+type HeaderProps = {
+  isActive: boolean;
+};
+
+export const Header: React.FC<HeaderProps> = ({ isActive }) => {
   return (
     <header>
-      <div className="flex justify-between items-center px-24 py-4 bg-black text-white">
-        <div className=" text-4xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-          <Link href="/" className="hover:underline">
-            choozoo
-          </Link>
+      <div className="fixed top-0 z-10 flex w-screen items-center justify-between bg-white-100 px-24 py-6 text-black-200">
+        <div className="text-transparent font-syne text-3xl font-medium">
+          <Link href="/">Miniature</Link>
         </div>
         <nav>
-          <ul className="flex gap-12">
+          <ul className="flex gap-7">
             <li>
-              <Link href="/" className="hover:underline">
-                HOME
-              </Link>
+              <LinkButton href={"/"} text={"HOME"} />
             </li>
             <li>
-              <Link href="/blog" className="hover:underline">
-                BLOG
-              </Link>
+              <LinkButton href={"/blog/list"} text={"BLOG"} />
             </li>
             <li>
-              <Link href="/archives" className="hover:underline">
-                ARCHIVES
-              </Link>
+              <LinkButton href={"/archives"} text={"ARCHIVES"} />
             </li>
           </ul>
         </nav>
