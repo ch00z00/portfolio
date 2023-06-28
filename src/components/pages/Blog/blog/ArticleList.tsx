@@ -8,13 +8,13 @@ type Props = {
 export const ArticleList: React.FC<Props> = ({ blog }) => {
   return (
     <div>
-      <div className="bg-black-200 py-20 text-white-100">
-        <ul className="flex flex-row items-center justify-around">
+      <div className="h-screen bg-black-200 pt-40 font-orbitron text-2xl tracking-wider text-white-200/70">
+        <ul className="flex flex-col items-center justify-around gap-20">
           {blog.map((blog) => (
             <li key={blog.id}>
               <Link
                 href={`/blog/${blog.id}`}
-                className="duration-300 hover:text-red-100"
+                className="duration-500 hover:text-3xl hover:text-white-200"
               >
                 {blog.title}
               </Link>

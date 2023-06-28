@@ -1,10 +1,11 @@
+import Image from "next/image";
+
 export const Hero: React.FC = () => {
   return (
-    <div className="gradient-red-white flex h-fit w-screen flex-col items-center justify-center pb-52 pt-80 text-white-100">
-      <h1 className="font-syne text-8xl">Yusuke Seki</h1>
-      <div className="leading-relax pt-28 text-xl font-light uppercase tracking-widest">
-        This is a <span className="font-syne normal-case">Miniature</span> of
-        myself.
+    <div className="h-screen w-screen bg-blue-200 p-20 font-orbitron text-black-200">
+      <div className="text-white-200">Hello</div>
+      <div className="flex items-center justify-center gap-16 px-40">
+        <Image src="/assets/me.png" width={500} height={500} alt="me" />
       </div>
     </div>
   );

@@ -1,1 +1,1 @@
-export * from "./ArchivesHero";
+export * from "./ArchivePage";
