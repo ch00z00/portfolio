@@ -10,11 +10,11 @@ export const LinkButton: React.FC<LinkButtonProps> = ({ href, text }) => {
     <>
       <button
         type="button"
-        className="hover:gradient-red-white relative inline-flex items-center justify-start overflow-hidden rounded-full border-2 bg-white-100"
+        className="relative inline-flex items-center justify-start overflow-hidden"
       >
         <Link
           href={href}
-          className="px-6 py-2 font-orbitron text-black-200 transition-colors duration-300 ease-in-out hover:text-white-100"
+          className="font-orbitron text-base tracking-widest text-white-200 duration-500 ease-in-out hover:text-black-200"
         >
           {text}
         </Link>

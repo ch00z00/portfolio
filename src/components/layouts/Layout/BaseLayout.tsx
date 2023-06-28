@@ -25,6 +25,10 @@ export const BaseLayout: React.FC<BaseLayoutProps> = ({
           href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Syne:wght@800&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Header isActive />
       <main className="relative h-screen w-screen">{children}</main>

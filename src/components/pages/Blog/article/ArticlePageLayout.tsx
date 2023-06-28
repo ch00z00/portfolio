@@ -40,7 +40,7 @@ export const ArticlePageLayout: React.FC<Props> = ({
         <div className="mt-12 flex flex-row">
           <ArticleNum article={article} />
           <ArticleBody article={article} />
-          <ArticleSidebar article={article} />
+          {/* <ArticleSidebar article={article} /> */}
         </div>
       </div>
     </>
