@@ -13,3 +13,8 @@
     @apply drop-shadow-[0_1.0px_1.0px_rgba(0,0,0,0.9)];
   }
 }
+
+@font-face {
+  font-family: "neuropol";
+  src: url("../../public/fonts/neuropol x rg.otf");
+}

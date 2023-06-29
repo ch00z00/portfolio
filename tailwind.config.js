@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         syne: ['"Syne"', "sans-serif"],
         orbitron: ['"Orbitron"', "sans-serif"],
+        neuropol: ['"Neuropol"', "sans-serif"],
       },
     },
     colors: {

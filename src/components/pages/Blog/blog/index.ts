@@ -1,1 +1,1 @@
-export * from "./BlogPageLayout"
+export * from "./ArticleList";

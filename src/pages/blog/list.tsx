@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from "next";
 import { client } from "../../libs/client";
 import { Article } from "@/types/blog";
 import { BaseLayout } from "@/components/layouts/Layout";
-import { BlogPageLayout } from "@/components/pages/Blog/blog";
+import { ArticleList } from "@/components/pages/Blog";
 
 type Props = {
   blog: Article[];
@@ -11,7 +11,7 @@ type Props = {
 const BlogPage: NextPage<Props> = ({ blog }) => {
   return (
     <BaseLayout title="| Blog">
-      <BlogPageLayout blog={blog} />
+      <ArticleList blog={blog} />
     </BaseLayout>
   );
 };
