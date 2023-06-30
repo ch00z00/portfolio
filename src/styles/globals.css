@@ -18,3 +18,7 @@
   font-family: "neuropol";
   src: url("../../public/fonts/neuropol x rg.otf");
 }
+@font-face {
+  font-family: "earth";
+  src: url("../../public/fonts/Earth 2073.ttf");
+}

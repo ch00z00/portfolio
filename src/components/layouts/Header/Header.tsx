@@ -17,12 +17,12 @@ export const Header: React.FC<HeaderProps> = ({ isActive }) => {
             <li>
               <LinkButton href={"/"} text={"HOME"} />
             </li>
-            <li>
+            {/* <li>
               <LinkButton href={"/blog/list"} text={"BLOG"} />
             </li>
             <li>
               <LinkButton href={"/archives"} text={"ARCHIVES"} />
-            </li>
+            </li> */}
             <li>
               <LinkButton href={"/about"} text={"ABOUT"} />
             </li>
