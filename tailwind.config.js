@@ -2,10 +2,14 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./src/**/*.{html,js}"],
   theme: {
     extend: {
+      backgroundImage: {
+        screen: "url('/assets/screen.png')",
+      },
       fontFamily: {
         syne: ['"Syne"', "sans-serif"],
         orbitron: ['"Orbitron"', "sans-serif"],
         neuropol: ['"Neuropol"', "sans-serif"],
+        earth: ['"Earth"', "sans-serif"],
       },
     },
     colors: {

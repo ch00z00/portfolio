@@ -14,7 +14,7 @@ export const LinkButton: React.FC<LinkButtonProps> = ({ href, text }) => {
       >
         <Link
           href={href}
-          className="font-orbitron text-base tracking-widest text-white-200 duration-500 ease-in-out hover:text-black-200"
+          className="font-orbitron text-xs tracking-widest text-white-200 duration-500 ease-in-out hover:text-sm"
         >
           {text}
         </Link>

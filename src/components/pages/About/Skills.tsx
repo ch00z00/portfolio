@@ -5,7 +5,7 @@ export const Skills: React.FC = () => {
         <p className="font-orbitron text-xl">03.</p>
         <h1 className="font-syne text-7xl">Skills</h1>
       </div>
-      <div className="grid grid-cols-2 justify-center px-40 font-neuropol text-3xl font-medium tracking-wide">
+      <div className="grid grid-cols-2 justify-center px-40 font-neuropol text-3xl tracking-wide">
         <div>Tech stacks</div>
         <div>Standard motor vehicle license (MT)</div>
       </div>
