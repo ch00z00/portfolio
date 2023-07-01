@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { ReactNode } from "react";
-import { Header } from "../Header";
+import { Navigator } from "../Nav";
 import { DESCRIPTION } from "@/const";
 
 type BaseLayoutProps = {
@@ -30,7 +30,7 @@ export const BaseLayout: React.FC<BaseLayoutProps> = ({
           rel="stylesheet"
         />
       </Head>
-      <Header isActive />
+      <Navigator />
       <main className="relative h-screen w-screen">{children}</main>
     </>
   );

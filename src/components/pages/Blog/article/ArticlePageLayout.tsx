@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { ReactNode } from "react";
-import { Header } from "../../../layouts/Header";
+import { Navigator } from "@/components/layouts/Nav";
 import { DESCRIPTION } from "@/const";
 import { Article } from "@/types/blog";
 import { ArticleHero } from "./ArticleHero";
@@ -34,8 +34,8 @@ export const ArticlePageLayout: React.FC<Props> = ({
           rel="stylesheet"
         />
       </Head>
-      <Header isActive />
-      <div className="flex flex-col bg-blue-100 py-28">
+      <Navigator />
+      <div className="flex flex-col bg-black-100 pb-40 pt-20">
         <ArticleHero article={article} />
         <div className="mt-12 flex flex-row">
           <ArticleNum article={article} />
