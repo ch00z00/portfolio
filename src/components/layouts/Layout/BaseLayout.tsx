@@ -20,6 +20,7 @@ export const BaseLayout: React.FC<BaseLayoutProps> = ({
       <Head>
         <title>Yusuke Seki {title}</title>
         <meta name="description" content={DESCRIPTION.base} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap"
@@ -31,6 +32,7 @@ export const BaseLayout: React.FC<BaseLayoutProps> = ({
         />
       </Head>
       <Navigator />
+      {/* Set no margin & avoid over-scroll here. */}
       <main className="relative h-screen w-screen">{children}</main>
     </>
   );
