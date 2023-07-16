@@ -10,12 +10,15 @@
     "lint:fix": "eslint ./src --fix"
   },
   "dependencies": {
+    "@react-three/drei": "^9.78.1",
+    "@react-three/fiber": "^8.13.4",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "18.15.13",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "gltfjsx": "^6.2.7",
     "microcms-js-sdk": "^2.5.0",
     "next": "13.3.0",
     "react": "18.2.0",
@@ -26,7 +29,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/three": "^0.151.0",
+    "@types/three": "^0.153.0",
     "autoprefixer": "^10.4.14",
     "eslint-plugin-tailwindcss": "^3.12.1",
     "postcss": "^8.4.23",

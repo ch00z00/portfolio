@@ -6,3 +6,9 @@ export const DESCRIPTION = {
   blog: "This is my blog page. I post articles about my hobbies from now on.",
   arch: "This is a gallery of my past work."
 }
+
+export const hovNavItems = [
+  {
+    name: "home"
+  }
+]
