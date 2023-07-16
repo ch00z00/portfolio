@@ -53,8 +53,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         far={1000}
         near={0.1}
         fov={22.895}
-        position={[0, 1.163, 4.824]}
-        rotation={[-0.14, 0.002, 0.004]}
+        position={[0, 1.013, 4.824]}
         scale={0.478}
       />
       <mesh
@@ -62,7 +61,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Floor.geometry}
         material={materials.reflective_asphalt}
-        position={[0, -0.197, 2.196]}
+        position={[0, -0.347, 2.196]}
         scale={5.933}
       />
       <Float floatIntensity={1} rotationIntensity={0}>
@@ -71,7 +70,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
           receiveShadow
           geometry={nodes.Out_frame.geometry}
           material={materials.Material}
-          position={[-0.01, 0.479, 0.578]}
+          position={[-0.01, 0.329, 0.578]}
           scale={[0.562, 0.405, 0.405]}
         />
         <mesh
@@ -79,7 +78,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
           receiveShadow
           geometry={nodes.Display.geometry}
           material={materials["TV screen"]}
-          position={[-0.014, 0.46, 0.98]}
+          position={[-0.014, 0.31, 0.98]}
           scale={[0.442, 0.299, 0.295]}
         />
       </Float>
@@ -88,7 +87,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder001.geometry}
         material={materials.fluorescent_light}
-        position={[0.525, 0.549, -0.66]}
+        position={[0.525, 0.398, -0.66]}
         rotation={[0.496, -0.919, 0.591]}
         scale={[0.012, 0.757, 0.012]}
       />
@@ -97,7 +96,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder002.geometry}
         material={materials.fluorescent_light}
-        position={[0.391, 0.861, -0.859]}
+        position={[0.391, 0.711, -0.859]}
         rotation={[-0.738, -0.802, -0.902]}
         scale={[0.012, 0.717, 0.013]}
       />
@@ -106,7 +105,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder003.geometry}
         material={materials.fluorescent_light}
-        position={[0.192, 0.514, -0.831]}
+        position={[0.192, 0.363, -0.831]}
         rotation={[0.714, -0.775, 0.874]}
         scale={[0.012, 1.147, 0.012]}
       />
@@ -115,7 +114,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder004.geometry}
         material={materials.fluorescent_light}
-        position={[-0.237, 0.621, -0.823]}
+        position={[-0.237, 0.471, -0.823]}
         rotation={[-0.435, -0.986, -0.512]}
         scale={[0.012, 0.811, 0.012]}
       />
@@ -124,7 +123,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder005.geometry}
         material={materials.fluorescent_light}
-        position={[1.204, 0.538, -0.779]}
+        position={[1.204, 0.388, -0.779]}
         rotation={[0.747, -0.795, 0.914]}
         scale={[0.012, 0.672, 0.012]}
       />
@@ -133,7 +132,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder006.geometry}
         material={materials.fluorescent_light}
-        position={[-0.66, 0.512, -0.803]}
+        position={[-0.66, 0.362, -0.803]}
         rotation={[-0.138, -1.025, -0.16]}
         scale={[0.012, 0.672, 0.012]}
       />
@@ -142,7 +141,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder007.geometry}
         material={materials.fluorescent_light}
-        position={[-0.983, 0.492, -0.684]}
+        position={[-0.983, 0.341, -0.684]}
         rotation={[0.266, -0.925, 0.745]}
         scale={[0.012, 0.834, 0.012]}
       />
@@ -151,7 +150,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder008.geometry}
         material={materials.fluorescent_light}
-        position={[0.799, 0.072, -0.562]}
+        position={[0.799, -0.079, -0.562]}
         rotation={[1.689, -0.209, 2.072]}
         scale={[0.013, 0.722, 0.016]}
       />
@@ -160,7 +159,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder009.geometry}
         material={materials.fluorescent_light}
-        position={[1.023, 0.624, -0.682]}
+        position={[1.023, 0.474, -0.682]}
         rotation={[0.863, 0.281, 2.1]}
         scale={[0.016, 0.961, 0.022]}
       />
@@ -169,7 +168,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder010.geometry}
         material={materials.fluorescent_light}
-        position={[1.329, 0.516, -0.316]}
+        position={[1.329, 0.366, -0.316]}
         rotation={[0.372, 0.975, 2.704]}
         scale={[0.012, 0.672, 0.012]}
       />
@@ -178,7 +177,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder011.geometry}
         material={materials.fluorescent_light}
-        position={[-1.09, 0.043, 0.072]}
+        position={[-1.09, -0.107, 0.072]}
         rotation={[0.977, 0.383, 1.78]}
         scale={[0.014, 0.696, 0.015]}
       />
@@ -187,7 +186,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Cylinder012.geometry}
         material={materials.fluorescent_light}
-        position={[-0.985, 0.54, -0.803]}
+        position={[-0.985, 0.39, -0.803]}
         rotation={[1.01, -0.276, 1.419]}
         scale={[0.014, 0.721, 0.017]}
       />
@@ -196,7 +195,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Plane003.geometry}
         material={materials["Material.004"]}
-        position={[0, 1.37, -2.833]}
+        position={[0, 1.219, -2.833]}
         rotation={[Math.PI / 2, 0, 0]}
         scale={[0.573, 1, 1.597]}
       />
@@ -205,7 +204,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Plane001.geometry}
         material={materials["Material.004"]}
-        position={[1.117, 1.37, -2.689]}
+        position={[1.117, 1.219, -2.689]}
         rotation={[Math.PI / 2, 0, 0.262]}
         scale={[0.573, 1, 1.597]}
       />
@@ -214,7 +213,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Plane002.geometry}
         material={materials["Material.004"]}
-        position={[2.167, 1.37, -2.252]}
+        position={[2.167, 1.219, -2.252]}
         rotation={[Math.PI / 2, 0, Math.PI / 6]}
         scale={[0.573, 1, 1.597]}
       />
@@ -223,7 +222,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Plane004.geometry}
         material={materials["Material.004"]}
-        position={[-1.125, 1.37, -2.689]}
+        position={[-1.125, 1.219, -2.689]}
         rotation={[Math.PI / 2, 0, -0.262]}
         scale={[0.573, 1, 1.597]}
       />
@@ -232,7 +231,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Plane005.geometry}
         material={materials["Material.004"]}
-        position={[-2.175, 1.37, -2.252]}
+        position={[-2.175, 1.219, -2.252]}
         rotation={[Math.PI / 2, 0, -Math.PI / 6]}
         scale={[0.573, 1, 1.597]}
       />
@@ -241,7 +240,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Plane006.geometry}
         material={materials["Material.004"]}
-        position={[-3.077, 1.37, -1.559]}
+        position={[-3.077, 1.219, -1.559]}
         rotation={[Math.PI / 2, 0, -Math.PI / 4]}
         scale={[0.573, 1, 1.597]}
       />
@@ -250,7 +249,7 @@ export function LightRoom(props: JSX.IntrinsicElements["group"]) {
         receiveShadow
         geometry={nodes.Plane007.geometry}
         material={materials["Material.004"]}
-        position={[3.066, 1.37, -1.559]}
+        position={[3.066, 1.219, -1.559]}
         rotation={[Math.PI / 2, 0, -2.356]}
         scale={[0.573, 1, 1.597]}
       />
