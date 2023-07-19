@@ -2,9 +2,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./src/**/*.{html,js}"],
   theme: {
     extend: {
-      backgroundImage: {
-        screen: "url('/assets/screen.png')",
-      },
+      // backgroundImage: {
+      //   "tv-noise": "url('/assets/tv_noise.gif')",
+      // },
       fontFamily: {
         syne: ['"Syne"', "sans-serif"],
         orbitron: ['"Orbitron"', "sans-serif"],
