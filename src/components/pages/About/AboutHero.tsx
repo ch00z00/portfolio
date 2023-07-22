@@ -6,7 +6,7 @@ import { Suspense } from "react";
 export const AboutHero: React.FC = () => {
   return (
     <div className="h-screen w-screen bg-black-200 text-white-200">
-      <Canvas camera={{ fov: 10, position: [0, 0, 10] }}>
+      <Canvas shadows dpr={[1, 1.5]} camera={{ fov: 10, position: [0, 0, 10] }}>
         <color attach="background" args={["black"]} />
         <ambientLight />
         <OrbitControls enableZoom={false} />

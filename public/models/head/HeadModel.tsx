@@ -4,7 +4,7 @@ Command: npx gltfjsx@6.2.7 head_sculpture.glb --types --shadows
 */
 
 import * as THREE from "three";
-import React, { useRef } from "react";
+import React from "react";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 
