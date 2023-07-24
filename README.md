@@ -1,4 +1,10 @@
-# My portfolio site 🦄
+# Portfolio website 🦄
 
-My name is choozoo the creator.
+Hi there👋  My name is choozoo.
 I'm a Front-end developer in Japan.
+
+## Teck stack
+
+- Next.js
+- TypeScript
+- WebGL, Three.js
