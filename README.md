@@ -1,10 +1,33 @@
 # Portfolio website 🦄
 
 Hi there👋  My name is choozoo.
-I'm a Front-end developer in Japan.
+
+This is my portfolio website. This portfolio website contains a variety of information about me, so please check it out!
+
+I worked as a front-end engineer for about 2 years as a long-term internship in an IT venture company developing its own application.
+
+---
+
+こんにちは 👋  私は choozoo といいます。
+
+こちらは私のポートフォリオサイトです。サイト内では、私に関する様々な情報を掲載しているので、ぜひ少し覗いてみてください！
+
+私はフロントエンドエンジニアとして、IT ベンチャー企業の自社アプリ開発に 2 年間ほど長期インターンシップとして携わっていました。
 
 ## Teck stack
 
-- Next.js
+Front-end
+
+- Next.js(React)
 - TypeScript
 - WebGL, Three.js
+- TailwindCSS, GSAP
+
+Back-end
+
+- Node.js Python, Django
+- MySQL
+
+Other
+
+- HTML, CSS, JavaScript, AWS, Docker, Linux

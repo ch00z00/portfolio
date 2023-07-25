@@ -7,7 +7,10 @@ export const Skills: React.FC = () => {
       </div>
       <div className="grid grid-cols-2 justify-center px-40 font-neuropol text-3xl tracking-wide">
         <div>Tech stacks</div>
-        <div>Standard motor vehicle license (MT)</div>
+        <div>
+          <div>Standard motor vehicle license (MT)</div>
+          <div>TOEIC 660</div>
+        </div>
       </div>
     </div>
   );
