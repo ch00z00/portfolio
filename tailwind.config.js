@@ -11,6 +11,21 @@ module.exports = {
         neuropol: ['"Neuropol"', "sans-serif"],
         earth: ['"Earth"', "sans-serif"],
       },
+      animation: {
+        "fade-in-bottom": "fade-in-bottom 1.2s ease-out both",
+      },
+      keyframes: {
+        "fade-in-bottom": {
+          "0%": {
+            transform: "translateY(50px)",
+            opacity: "0",
+          },
+          to: {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
+      },
     },
     colors: {
       white: {
