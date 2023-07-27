@@ -8,7 +8,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body>
+      <body className="m-0 overflow-x-hidden">
         <Main />
         <NextScript />
       </body>

@@ -1,4 +1,7 @@
+import clsx from "clsx";
 import Link from "next/link";
+
+// TODO: bg-whiteでtext-black-200にする
 
 type LinkButtonProps = {
   href: string;
@@ -14,7 +17,9 @@ export const LinkButton: React.FC<LinkButtonProps> = ({ href, text }) => {
       >
         <Link
           href={href}
-          className="font-orbitron text-sm tracking-widest text-white-200"
+          className={clsx(
+            "font-orbitron text-xs tracking-widest text-white-200 sm:text-sm"
+          )}
         >
           {text}
         </Link>
