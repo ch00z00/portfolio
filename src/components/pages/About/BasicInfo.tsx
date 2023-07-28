@@ -2,6 +2,11 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+/** TODO:
+ * [title]: Implement an slide in animation only once when loaded.
+ * [items]: Implement an type effect only once when loaded & a cursor sticking effect when hovering.
+ */
+
 export const BasicInfo: React.FC = () => {
   const ref = useRef<HTMLInputElement>(null);
   const didEffect = React.useRef(false);
