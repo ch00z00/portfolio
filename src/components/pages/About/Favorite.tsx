@@ -1,3 +1,8 @@
+/** TODO:
+ * [title]: Implement an slide in animation only once when loaded.
+ * [items]: Implement an type effect only once when loaded & a cursor sticking effect when hovering.
+ */
+
 export const Favorite: React.FC = () => {
   return (
     <div className="mx-auto flex h-screen w-screen flex-col-reverse bg-white-200 py-52 text-center text-black-200 md:grid md:grid-cols-2 md:py-0 md:pl-40 md:text-start xl:pl-60">

@@ -1,5 +1,10 @@
 import { LinkButton } from "@/components/elements/Button";
 
+/** TODO:
+ * 1. Implement an animation that performs the slide mark and type effect only once when loaded.
+ * 2. Implement a cursor sticking effect when hovering.
+ */
+
 export const Navigator: React.FC = () => {
   return (
     <>

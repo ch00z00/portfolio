@@ -1,3 +1,9 @@
+/** TODO:
+ * [title]: Implement an up-to-down slide in animation only once when loaded.
+ * [sub-title]: Implement an animation that performs the slide mark only once when loaded.
+ * [items]: Implement an type effect only once when loaded & a cursor sticking effect when hovering.
+ */
+
 export const Skills: React.FC = () => {
   return (
     <div className="h-screen w-screen bg-blue-200 pt-32 text-white-200">
