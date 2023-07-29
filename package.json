@@ -10,8 +10,6 @@
     "lint:fix": "eslint ./src --fix"
   },
   "dependencies": {
-    "@react-three/drei": "^9.78.1",
-    "@react-three/fiber": "^8.13.4",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "18.15.13",
     "@types/react": "18.0.37",
@@ -24,6 +22,7 @@
     "ityped": "^1.0.3",
     "microcms-js-sdk": "^2.5.0",
     "next": "13.3.0",
+    "next-transpile-modules": "^10.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-error-boundary": "^4.0.4",

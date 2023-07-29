@@ -27,6 +27,7 @@ export const ArticlePageLayout: React.FC<Props> = ({
     <>
       <Head>
         <title>Yusuke Seki {blog_title}</title>
+        <meta charSet="UTF-8" />
         <meta name="description" content={DESCRIPTION.blog} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
