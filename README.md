@@ -14,6 +14,10 @@ I worked as a front-end engineer for about 2 years as a long-term internship in 
 
 私はフロントエンドエンジニアとして、IT ベンチャー企業の自社アプリ開発に 2 年間ほど長期インターンシップとして携わっていました。
 
+## Techs & tools used on this website
+
+Next.js / TypeScript / TailwindCSS / GSAP / Three.js / WebGL
+
 ## Teck stack
 
 Front-end
