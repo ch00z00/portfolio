@@ -12,7 +12,7 @@ export const Favorite: React.FC = () => {
         <p>Work out 🏋️💪</p>
       </div>
       <div className="flex flex-col justify-center gap-8 md:items-start">
-        <p className="font-orbitron text-sm md:text-xl">04.</p>
+        <p className="font-orbitron text-sm lg:text-xl">04.</p>
         <h1 className="font-syne text-4xl lg:text-6xl">Favorite</h1>
       </div>
     </div>
