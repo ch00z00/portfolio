@@ -2,6 +2,9 @@
   "name": "profile",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "⚠️ Please use yarn command instead of npm! - from the old me ✌️"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
