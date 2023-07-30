@@ -3,7 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 /** TODO:
- * [title]: Implement an slide in animation only once when loaded.
+ * 🦄 [title]: Implement an slide in animation only once when loaded.
  * [items]: Implement an type effect only once when loaded & a cursor sticking effect when hovering.
  */
 

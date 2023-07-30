@@ -3,64 +3,54 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 /** TODO:
- * [title]: Implement an up-to-down slide in animation only once when loaded.
- * [sub-title]: Implement an animation that performs the slide mark only once when loaded.
+ * 🦄 [title]: Implement an up-to-down slide in animation only once when loaded.
+ * 🦄 [sub-title]: Implement an animation that performs the slide mark only once when loaded.
  * [items]: Implement an type effect only once when loaded & a cursor sticking effect when hovering.
  */
 
 export const Skills: React.FC = () => {
-  const ref = useRef(null);
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       gsap.registerPlugin(ScrollTrigger);
-
       setAnimation();
     }
-  }, [ref]);
+  }, []);
 
   const setAnimation = () => {
     const stagger = 0.05;
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ref.current,
-          start: "top 100%",
-          toggleActions: "play none none reset",
-        },
-      })
-      .to(ref.current, {
-        scrollTrigger: {
-          trigger: ref.current,
-          start: "top center",
-          once: true,
-        },
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#el",
+        start: "top 100%",
+        toggleActions: "play none none reset",
+      },
+    });
+    tl.fromTo(
+      "#slideY p",
+      { opacity: 0, y: 30 },
+      {
         opacity: 1,
-        duration: 1,
+        y: 0,
+        duration: 2,
         stagger,
-      })
-      .fromTo(
-        "#slideY p",
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1.4,
-          stagger,
-          scrollTrigger: {
-            trigger: ref.current,
-            start: "top 100%",
-            toggleActions: "play none none reset",
-          },
-        }
-      );
+      },
+      "<"
+    );
+    tl.fromTo(
+      "#slideX div",
+      { alpha: 0, x: -30 },
+      {
+        alpha: 1,
+        x: 0,
+        duration: 2,
+        stagger,
+      },
+      "<0.3"
+    );
   };
 
   return (
-    <div
-      className="h-screen w-screen bg-blue-200 pt-32 text-white-200"
-      ref={ref}
-    >
+    <div className="h-screen w-screen bg-blue-200 pt-32 text-white-200" id="el">
       <div
         className="mb-20 flex flex-col items-center justify-center gap-8"
         id="slideY"
