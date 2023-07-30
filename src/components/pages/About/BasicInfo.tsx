@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 /** TODO:
  * [title]: Implement an slide in animation only once when loaded.
@@ -17,22 +17,16 @@ export const BasicInfo: React.FC = () => {
 
   const setAnimation = () => {
     gsap.fromTo(
-      "#slideY p",
-      { opacity: 0, y: 10 },
+      "#slideX p",
+      { alpha: 0, x: -30 },
       {
-        opacity: 1,
-        y: 0,
+        alpha: 1,
+        x: 0,
         duration: 2,
         scrollTrigger: {
-          trigger: "slideY",
-          start: "top center",
-          end: "bottom center",
-          onEnter: () => {
-            console.log("scroll In");
-          },
-          onEnterBack: () => {
-            console.log("scroll Back");
-          },
+          trigger: "slideX",
+          start: "top 100%",
+          toggleActions: "play none none reset",
         },
       }
     );
@@ -43,7 +37,7 @@ export const BasicInfo: React.FC = () => {
       <div className="mx-auto grid h-screen w-screen grid-cols-1 bg-black-200 py-36 text-center text-white-200 md:grid-cols-2 md:py-0 md:pl-40 md:text-start">
         <div
           className="flex flex-col justify-center gap-8 md:items-start"
-          id="slideY"
+          id="slideX"
         >
           <p className="font-orbitron text-sm xl:text-xl">02.</p>
           <p className="font-syne text-4xl xl:text-6xl">Basic info</p>
