@@ -30,3 +30,18 @@ export const INFO_ITEMS = [
     img: "",
   },
 ];
+
+export const FAVORITE_ITEMS = [
+  {
+    text: "Traveling 🕺✈️",
+    img: "",
+  },
+  {
+    text: "Watching movies 🎥🍿",
+    img: "",
+  },
+  {
+    text: "Work out 🏋️💪",
+    img: "",
+  },
+];
