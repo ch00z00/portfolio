@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
+import { init } from "ityped";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { INFO_ITEMS } from "@/const";
 
 /** TODO:
  * 🦄 [title]: Implement an slide in animation only once when loaded.
@@ -16,25 +18,47 @@ export const BasicInfo: React.FC = () => {
   }, []);
 
   const setAnimation = () => {
-    gsap.fromTo(
+    const stagger = 0.05;
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#el",
+        start: "top 100%",
+        toggleActions: "play none none reset",
+      },
+    });
+    tl.fromTo(
       "#slideX p",
       { alpha: 0, x: -30 },
       {
         alpha: 1,
         x: 0,
         duration: 2,
-        scrollTrigger: {
-          trigger: "slideX",
-          start: "top 100%",
-          toggleActions: "play none none reset",
-        },
+        stagger,
       }
-    );
+    ).call(initTypeAnim, [], "<1");
+  };
+
+  const initTypeAnim = () => {
+    {
+      INFO_ITEMS.map((item) => {
+        init("#ityped", {
+          strings: [`${item.text}`],
+          startDelay: 0,
+          typeSpeed: 80,
+          loop: false,
+          disableBackTyping: true,
+          showCursor: false,
+        });
+      });
+    }
   };
 
   return (
     <>
-      <div className="mx-auto grid h-screen w-screen grid-cols-1 bg-black-200 py-36 text-center text-white-200 md:grid-cols-2 md:py-0 md:pl-40 md:text-start">
+      <div
+        className="mx-auto grid h-screen w-screen grid-cols-1 bg-black-200 py-36 text-center text-white-200 md:grid-cols-2 md:py-0 md:pl-40 md:text-start"
+        id="el"
+      >
         <div
           className="flex flex-col justify-center gap-8 md:items-start"
           id="slideX"
@@ -42,10 +66,15 @@ export const BasicInfo: React.FC = () => {
           <p className="font-orbitron text-sm xl:text-xl">02.</p>
           <p className="font-syne text-4xl xl:text-6xl">Basic info</p>
         </div>
-        <div className="flex flex-col justify-center gap-14 font-orbitron text-lg font-light tracking-wider md:gap-28 xl:text-3xl">
-          <p>23 years old</p>
-          <p>Ritsumeikan Univ Student</p>
-          <p>Front-end developer</p>
+        <div
+          className="flex flex-col justify-center gap-14 font-orbitron text-lg font-light tracking-wider md:gap-28 xl:text-3xl"
+          id="ityped"
+        >
+          {INFO_ITEMS.map((item) => (
+            <div key={item.name}>
+              <p>{item.text}</p>
+            </div>
+          ))}
         </div>
       </div>
     </>

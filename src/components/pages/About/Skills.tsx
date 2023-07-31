@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
@@ -33,10 +33,8 @@ export const Skills: React.FC = () => {
         y: 0,
         duration: 2,
         stagger,
-      },
-      "<"
-    );
-    tl.fromTo(
+      }
+    ).fromTo(
       "#slideX div",
       { alpha: 0, x: -30 },
       {
@@ -45,7 +43,7 @@ export const Skills: React.FC = () => {
         duration: 2,
         stagger,
       },
-      "<0.3"
+      "<0.4"
     );
   };
 
