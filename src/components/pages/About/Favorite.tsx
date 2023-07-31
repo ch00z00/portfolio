@@ -16,24 +16,31 @@ export const Favorite: React.FC = () => {
   }, []);
 
   const setAnimation = () => {
-    gsap.fromTo(
+    const stagger = 0.05;
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#el",
+        start: "top 100%",
+        toggleActions: "play none none reset",
+      },
+    });
+    tl.fromTo(
       "#slideX p",
       { alpha: 0, x: 30 },
       {
         alpha: 1,
         x: 0,
         duration: 2,
-        scrollTrigger: {
-          trigger: "slideX",
-          start: "top 100%",
-          toggleActions: "play none none reset",
-        },
+        stagger,
       }
     );
   };
 
   return (
-    <div className="mx-auto flex h-screen w-screen flex-col-reverse bg-white-200 py-52 text-center text-black-200 md:grid md:grid-cols-2 md:py-0 md:pl-40 md:text-start xl:pl-60">
+    <div
+      className="mx-auto flex h-screen w-screen flex-col-reverse bg-white-200 py-52 text-center text-black-200 md:grid md:grid-cols-2 md:py-0 md:pl-40 md:text-start xl:pl-60"
+      id="el"
+    >
       <div className="flex flex-col justify-center gap-14 pt-32 font-orbitron text-lg font-light tracking-wider md:gap-28 md:pt-0 xl:text-3xl">
         <p>Traveling 🕺✈️</p>
         <p>Watching movies 🎥🍿</p>
