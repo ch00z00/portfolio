@@ -42,7 +42,7 @@ export const Favorite: React.FC = () => {
     {
       FAVORITE_ITEMS.map((item) => {
         init("#ityped", {
-          strings: [`${item.text}`],
+          strings: [`${item.fav}`],
           startDelay: 0,
           typeSpeed: 80,
           loop: false,
@@ -63,8 +63,8 @@ export const Favorite: React.FC = () => {
         id="ityped"
       >
         {FAVORITE_ITEMS.map((item) => (
-          <div key={item.text}>
-            <p>{item.text}</p>
+          <div key={item.fav}>
+            <p>{item.fav}</p>
           </div>
         ))}
       </div>

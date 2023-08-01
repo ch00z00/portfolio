@@ -33,15 +33,15 @@ export const INFO_ITEMS = [
 
 export const FAVORITE_ITEMS = [
   {
-    text: "Traveling 🕺✈️",
+    fav: "Traveling 🕺✈️",
     img: "",
   },
   {
-    text: "Watching movies 🎥🍿",
+    fav: "Watching movies 🎥🍿",
     img: "",
   },
   {
-    text: "Work out 🏋️💪",
+    fav: "Work out 🏋️💪",
     img: "",
   },
 ];
