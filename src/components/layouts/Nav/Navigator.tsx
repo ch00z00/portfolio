@@ -1,7 +1,3 @@
-import { useEffect } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { init } from "ityped";
 import { Header } from "../Header";
 import { Footer } from "../Footer";
 
