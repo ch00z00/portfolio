@@ -21,7 +21,7 @@ export const Skills: React.FC = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#el",
-        start: "top 100%",
+        start: "top 20%",
         toggleActions: "play none none reset",
       },
     });

@@ -3519,6 +3519,11 @@ spdx-license-ids@^3.0.0:
   resolved "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-3.0.13.tgz"
   integrity sha512-XkD+zwiqXHikFZm4AX/7JSCXA98U5Db4AFd5XUg/+9UNtnH75+Z9KxtpYiJZx36mUDVOwH83pl7yvCer6ewM3w==
 
+split-type@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/split-type/-/split-type-0.3.3.tgz#5ed4503d96cddcccea1ca2dcae0bbc330ff3282e"
+  integrity sha512-gEA90DEHJhdT/5Da2gR7FPHgaGgivTN4PfZBtHKcl4quDLsE3x7tJlGTKEp4yyqpfi1wCaqeKE+s2UCqBRjJYA==
+
 sshpk@^1.7.0:
   version "1.17.0"
   resolved "https://registry.npmjs.org/sshpk/-/sshpk-1.17.0.tgz"

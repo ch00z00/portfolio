@@ -6,7 +6,7 @@ import { INFO_ITEMS } from "@/const";
 
 /** TODO:
  * 🦄 [title]: Implement an slide in animation only once when loaded.
- * [items]: Implement an type effect only once when loaded & a cursor sticking effect when hovering.
+ * [items]: Implement a cursor sticking effect when hovering.
  */
 
 export const BasicInfo: React.FC = () => {
@@ -22,7 +22,7 @@ export const BasicInfo: React.FC = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#el",
-        start: "top 100%",
+        start: "top 60%",
         toggleActions: "play none none reset",
       },
     });
@@ -35,22 +35,7 @@ export const BasicInfo: React.FC = () => {
         duration: 2,
         stagger,
       }
-    ).call(initTypeAnim, [], "<1");
-  };
-
-  const initTypeAnim = () => {
-    {
-      INFO_ITEMS.map((item) => {
-        init("#ityped", {
-          strings: [`${item.text}`],
-          startDelay: 0,
-          typeSpeed: 80,
-          loop: false,
-          disableBackTyping: true,
-          showCursor: false,
-        });
-      });
-    }
+    );
   };
 
   return (
@@ -66,10 +51,7 @@ export const BasicInfo: React.FC = () => {
           <p className="font-orbitron text-sm xl:text-xl">02.</p>
           <p className="font-syne text-4xl xl:text-6xl">Basic info</p>
         </div>
-        <div
-          className="flex flex-col justify-center gap-14 font-orbitron text-lg font-light tracking-wider md:gap-28 xl:text-3xl"
-          id="ityped"
-        >
+        <div className="flex flex-col justify-center gap-14 font-orbitron text-lg font-light tracking-wider md:gap-28 xl:text-3xl">
           {INFO_ITEMS.map((item) => (
             <div key={item.name}>
               <p>{item.text}</p>
