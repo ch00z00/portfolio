@@ -17,21 +17,3 @@ I worked as a front-end engineer for about 2 years as a long-term internship in 
 ## Techs & tools used on this website
 
 Next.js / TypeScript / TailwindCSS / GSAP / Three.js / WebGL
-
-## Teck stack
-
-Front-end
-
-- Next.js(React)
-- TypeScript
-- WebGL, Three.js
-- TailwindCSS, GSAP
-
-Back-end
-
-- Node.js Python, Django
-- MySQL
-
-Other
-
-- HTML, CSS, JavaScript, AWS, Docker, Linux
