@@ -6,11 +6,11 @@ export const Skills: React.FC = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       gsap.registerPlugin(ScrollTrigger);
-      setAnimation();
+      skGSAPAnim();
     }
   }, []);
 
-  const setAnimation = () => {
+  const skGSAPAnim = () => {
     const stagger = 0.05;
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -21,7 +21,7 @@ export const Skills: React.FC = () => {
     });
     tl.fromTo(
       "#slideY_sk p",
-      { opacity: 0, y: 30 },
+      { opacity: 0, y: 35 },
       {
         opacity: 1,
         y: 0,

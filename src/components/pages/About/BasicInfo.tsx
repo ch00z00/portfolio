@@ -7,47 +7,61 @@ export const BasicInfo: React.FC = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       gsap.registerPlugin(ScrollTrigger);
-      setAnimation();
+      biGSAPAnim();
     }
   }, []);
 
-  const setAnimation = () => {
+  const biGSAPAnim = () => {
     const stagger = 0.05;
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#bi_section",
-        start: "top 70%",
-        toggleActions: "play none none reset",
-      },
-    });
-    tl.fromTo(
-      "#slideX_bi p",
-      { alpha: 0, x: -35 },
-      {
-        alpha: 1,
-        x: 0,
-        duration: 2,
-        stagger,
-      }
-    );
+    const tl = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#bi_section",
+          start: "top 70%",
+          toggleActions: "play none none reset",
+        },
+      })
+      .fromTo(
+        "#slideY_bi p",
+        { opacity: 0, y: 35 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          stagger,
+        }
+      )
+      .fromTo(
+        "#slideX_bi p",
+        { alpha: 0, x: -35 },
+        {
+          alpha: 1,
+          x: 0,
+          duration: 2,
+          stagger,
+        },
+        "<0.4"
+      );
   };
 
   return (
     <>
       <div
-        className="mx-auto grid h-screen w-screen grid-cols-1 bg-black-200 py-48 text-center text-white-200 md:grid-cols-2 md:py-0 md:pl-40 md:text-start"
         id="bi_section"
+        className="mx-auto flex h-screen w-screen flex-col bg-black-200 py-48 text-center text-white-200 md:grid-cols-2 lg:grid lg:py-0 lg:pl-40 lg:text-start xl:pl-60"
       >
         <div
-          className="flex flex-col justify-center gap-8 md:items-start"
-          id="slideX_bi"
+          id="slideY_bi"
+          className="flex flex-col justify-center gap-8 lg:items-start"
         >
           <p className="font-orbitron text-sm xl:text-xl">02.</p>
-          <p className="font-syne text-4xl xl:text-6xl">Basic info</p>
+          <p className="font-syne text-4xl sm:text-5xl xl:text-6xl">
+            Basic info
+          </p>
         </div>
-        <div className="flex flex-col justify-center gap-12 font-orbitron text-lg font-light tracking-wider md:gap-28 xl:text-3xl">
+        <div className="flex flex-col justify-center gap-12 pt-28 font-orbitron text-lg font-light tracking-wider sm:text-2xl lg:gap-28 lg:pt-0 xl:text-3xl">
           {INFO_ITEMS.map((item) => (
-            <div key={item.name}>
+            <div key={item.name} id="slideX_bi">
               <p>{item.text}</p>
             </div>
           ))}
