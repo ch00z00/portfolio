@@ -2,12 +2,6 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-/** TODO:
- * 🦄 [title]: Implement an up-to-down slide in animation only once when loaded.
- * 🦄 [sub-title]: Implement an animation that performs the slide mark only once when loaded.
- * [items]: Implement an type effect only once when loaded & a cursor sticking effect when hovering.
- */
-
 export const Skills: React.FC = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -20,13 +14,13 @@ export const Skills: React.FC = () => {
     const stagger = 0.05;
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#el",
-        start: "top 20%",
+        trigger: "#sk_section",
+        start: "top 80%",
         toggleActions: "play none none reset",
       },
     });
     tl.fromTo(
-      "#slideY p",
+      "#slideY_sk p",
       { opacity: 0, y: 30 },
       {
         opacity: 1,
@@ -35,7 +29,7 @@ export const Skills: React.FC = () => {
         stagger,
       }
     ).fromTo(
-      "#slideX div",
+      "#slideX_sk div",
       { alpha: 0, x: -30 },
       {
         alpha: 1,
@@ -48,17 +42,20 @@ export const Skills: React.FC = () => {
   };
 
   return (
-    <div className="h-screen w-screen bg-blue-200 pt-32 text-white-200" id="el">
+    <div
+      className="h-screen w-screen bg-blue-200 pt-36 text-white-200"
+      id="sk_section"
+    >
       <div
         className="mb-20 flex flex-col items-center justify-center gap-8"
-        id="slideY"
+        id="slideY_sk"
       >
         <p className="font-orbitron text-sm md:text-xl">03.</p>
-        <p className="font-syne text-4xl md:text-6xl">Skills</p>
+        <p className="font-syne text-4xl md:text-7xl">Skills</p>
       </div>
       <div
-        className="grid grid-cols-1 justify-center gap-14 font-neuropol text-2xl tracking-wider md:grid-cols-2 md:gap-0 md:px-40 xl:text-4xl"
-        id="slideX"
+        className="grid grid-cols-1 justify-center gap-12 font-neuropol text-2xl tracking-wider md:grid-cols-2 md:gap-0 md:px-40 xl:text-4xl"
+        id="slideX_sk"
       >
         <div className="mx-auto text-center">
           TECK STACKS
