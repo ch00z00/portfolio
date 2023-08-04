@@ -6,6 +6,11 @@ import { Html, Head, Main, NextScript } from "next/document";
  * Component that extend tags such as html and body
  */
 
+/** TODO:
+ * 🦄 [title]: Implement an slide in animation only once when loaded.
+ * [items]: Implement a cursor sticking effect when hovering.
+ */
+
 export default function Document() {
   // useEffect(() => {
   //   cursorSralker();
