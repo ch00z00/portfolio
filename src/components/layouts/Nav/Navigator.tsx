@@ -47,7 +47,7 @@ export const Navigator: React.FC = () => {
       <Header />
       {/* Hide this when screen size is reduced to sm */}
       <div className="invisible fixed bottom-14 z-10 flex w-screen items-center justify-center px-14 font-earth text-xs uppercase text-white-200 sm:visible sm:px-24">
-        @2023 Yusuke Seki
+        <span className="text-lg">©</span>2023 Yusuke Seki
       </div>
       <Footer />
     </>
