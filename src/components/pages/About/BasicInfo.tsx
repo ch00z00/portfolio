@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import { init } from "ityped";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { INFO_ITEMS } from "@/const";
 
