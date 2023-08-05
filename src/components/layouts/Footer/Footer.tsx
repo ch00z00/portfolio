@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
           <li className="relative inline-block overflow-hidden" id="nav_btn">
             <span
               id="cover_rect"
-              className="absolute block h-full w-full -translate-x-full bg-white-200 content-none"
+              className="absolute block h-full w-full -translate-x-full bg-white-300 content-none"
             ></span>
             <span id="nav_label">
               <LinkButton href={item.href} text={item.name} />

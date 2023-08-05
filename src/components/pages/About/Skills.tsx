@@ -69,7 +69,7 @@ export const Skills: React.FC = () => {
         <div className="mx-auto text-center">
           OTHER
           <ul className="flex flex-col gap-3 pt-5 font-orbitron text-base md:gap-6 md:pt-14 xl:text-2xl">
-            <li>DL (MT)</li>
+            <li>Drivers License (MT)</li>
             <li>TOEIC 660</li>
           </ul>
         </div>
