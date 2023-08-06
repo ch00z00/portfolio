@@ -24,7 +24,7 @@ export const Navigator: React.FC = () => {
       },
       {
         x: "100%",
-        duration: 1,
+        duration: 1.2,
         ease: "power3.inout",
         stagger,
       }
@@ -34,7 +34,7 @@ export const Navigator: React.FC = () => {
       { alpha: 0 },
       {
         alpha: 1,
-        duration: 0.3,
+        duration: 0.5,
         delay: 0.5,
         stagger,
       },
