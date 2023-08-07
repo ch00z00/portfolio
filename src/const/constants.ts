@@ -1,5 +1,6 @@
 export const CONTACT_ADDRESS = "choozoo10@gmail.com";
 export const GITHUB_LINK = "https://github.com/ch00z00";
+export const TWITTER_LINK = "https://twitter.com/choozoo10";
 
 export const DESCRIPTION = {
   base: "Hi, my name is choozoo. I've been working as a front-end developer in Niigata Japan for 3 yrs.",

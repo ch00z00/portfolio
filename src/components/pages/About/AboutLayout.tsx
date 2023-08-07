@@ -2,6 +2,7 @@ import { AboutHero } from "./AboutHero";
 import { Favorite } from "./Favorite";
 import { BasicInfo } from "./BasicInfo";
 import { Skills } from "./Skills";
+import { Contact } from "./Contact";
 
 export const AboutLayout: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ export const AboutLayout: React.FC = () => {
       <BasicInfo />
       <Skills />
       <Favorite />
+      <Contact />
     </>
   );
 };
