@@ -42,7 +42,7 @@ export const Skills: React.FC = () => {
   };
 
   return (
-    <div
+    <section
       className="h-screen w-screen bg-blue-200 pt-36 text-white-200"
       id="sk_section"
     >
@@ -74,6 +74,6 @@ export const Skills: React.FC = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

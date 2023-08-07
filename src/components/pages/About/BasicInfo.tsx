@@ -46,7 +46,7 @@ export const BasicInfo: React.FC = () => {
 
   return (
     <>
-      <div
+      <section
         id="bi_section"
         className="mx-auto flex h-screen w-screen flex-col bg-black-200 py-48 text-center text-white-200 md:grid-cols-2 lg:grid lg:py-0 lg:pl-40 lg:text-start xl:pl-60"
       >
@@ -66,7 +66,7 @@ export const BasicInfo: React.FC = () => {
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </>
   );
 };
