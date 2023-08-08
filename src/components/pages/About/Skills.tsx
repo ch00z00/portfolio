@@ -43,12 +43,12 @@ export const Skills: React.FC = () => {
 
   return (
     <section
-      className="h-screen w-screen bg-blue-200 pt-36 text-white-200"
       id="sk_section"
+      className="h-screen w-screen bg-blue-200 pt-36 text-white-200"
     >
       <div
-        className="mb-20 flex flex-col items-center justify-center gap-8"
         id="slideY_sk"
+        className="mb-20 flex flex-col items-center justify-center gap-8"
       >
         <p className="font-orbitron text-sm md:text-xl">03.</p>
         <p className="font-syne text-4xl md:text-7xl">Skills</p>
