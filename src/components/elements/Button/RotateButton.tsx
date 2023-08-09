@@ -37,7 +37,7 @@ export const RotateButton: React.FC<Props> = ({
       .to(
         "#txts",
         {
-          yPercent: -100,
+          yPercent: 0,
         },
         "<"
       );
@@ -51,7 +51,7 @@ export const RotateButton: React.FC<Props> = ({
     target.addEventListener("mouseenter", () => {
       //ホバーしたとき
       gsap.to(befTxt, { y: "-100%", ease: "power2.out" });
-      gsap.to(aftTxt, { y: "0%", ease: "power2.out" });
+      gsap.to(aftTxt, { y: "-100%", ease: "power2.out" });
     });
     target.addEventListener("mouseleave", () => {
       //ホバーが外れたとき
@@ -68,7 +68,7 @@ export const RotateButton: React.FC<Props> = ({
       <Link href={href} className={twMerge("relative block w-full", className)}>
         <div
           id="txts"
-          className="flex h-full flex-col overflow-hidden font-orbitron text-xs tracking-widest text-white-200 sm:text-sm"
+          className="flex h-4 flex-col overflow-hidden font-orbitron text-xs tracking-widest text-white-200 sm:text-sm"
         >
           <span id="bef_txt" className="">
             {bef_txt}
