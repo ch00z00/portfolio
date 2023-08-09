@@ -23,38 +23,19 @@ export const RotateButton: React.FC<Props> = ({
   }, []);
 
   const rotateAnim = () => {
-    const bef_txt = document.querySelector("#bef_txt");
-    const aft_txt = document.querySelector("#aft_txt");
-    const btn = document.querySelector("#btn");
-
-    gsap
-      .timeline({
-        paused: true,
-      })
-      .to("#btn", {
-        background: "#1C1D1D",
-      })
-      .to(
-        "#txts",
-        {
-          yPercent: 0,
-        },
-        "<"
-      );
-
-    /* spanタグに分割 */
     const target = document.querySelector("#txts");
+    /* Null guard */
     if (target === null) return;
-    /* ターゲットにホバーした時の動き */
+    /* Roll action */
     const befTxt = target.querySelector("#bef_txt");
     const aftTxt = target.querySelector("#aft_txt");
     target.addEventListener("mouseenter", () => {
-      //ホバーしたとき
+      // onEnter action
       gsap.to(befTxt, { y: "-100%", ease: "power2.out" });
       gsap.to(aftTxt, { y: "-100%", ease: "power2.out" });
     });
     target.addEventListener("mouseleave", () => {
-      //ホバーが外れたとき
+      // onLeave action
       gsap.to(befTxt, { y: "0%", ease: "power2.out" });
       gsap.to(aftTxt, { y: "100%", ease: "power2.out" });
     });
