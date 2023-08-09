@@ -46,10 +46,13 @@ export const RotateButton: React.FC<Props> = ({
       type="button"
       className="relative inline-flex items-center justify-start overflow-hidden"
     >
-      <Link href={href} className={twMerge("relative block w-full", className)}>
+      <Link href={href} className="relative block w-full">
         <div
           id="txts"
-          className="flex h-4 flex-col overflow-hidden font-orbitron text-xs tracking-widest text-white-200 sm:text-sm"
+          className={twMerge(
+            "flex h-5 flex-col overflow-hidden font-orbitron text-xs tracking-widest text-white-200 sm:text-sm",
+            className
+          )}
         >
           <span id="bef_txt" className="">
             {bef_txt}
