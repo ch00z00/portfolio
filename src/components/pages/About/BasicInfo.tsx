@@ -13,7 +13,7 @@ export const BasicInfo: React.FC = () => {
 
   const biGSAPAnim = () => {
     const stagger = 0.05;
-    const tl = gsap
+    gsap
       .timeline({
         scrollTrigger: {
           trigger: "#bi_section",
