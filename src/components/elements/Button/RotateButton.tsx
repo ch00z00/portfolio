@@ -1,11 +1,12 @@
 import { useEffect } from "react";
-import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import gsap from "gsap";
+import { BaseLink } from "../Link";
 
 type Props = {
   className?: string;
   href: string;
+  onClick?: (event?: React.MouseEvent<HTMLElement, MouseEvent>) => void;
   bef_txt: string;
   aft_txt: string;
 };
@@ -13,6 +14,7 @@ type Props = {
 export const RotateButton: React.FC<Props> = ({
   className,
   href,
+  onClick,
   bef_txt,
   aft_txt,
 }) => {
@@ -45,8 +47,9 @@ export const RotateButton: React.FC<Props> = ({
     <button
       type="button"
       className="relative inline-flex items-center justify-start overflow-hidden"
+      onClick={onClick}
     >
-      <Link href={href} className="relative block w-full">
+      <BaseLink href={href} blank={true} className="relative block w-full">
         <div
           id="txts"
           className={twMerge(
@@ -54,14 +57,10 @@ export const RotateButton: React.FC<Props> = ({
             className
           )}
         >
-          <span id="bef_txt" className="">
-            {bef_txt}
-          </span>
-          <span id="aft_txt" className="">
-            {aft_txt}
-          </span>
+          <span id="bef_txt">{bef_txt}</span>
+          <span id="aft_txt">{aft_txt}</span>
         </div>
-      </Link>
+      </BaseLink>
     </button>
   );
 };
