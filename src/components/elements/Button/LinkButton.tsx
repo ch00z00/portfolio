@@ -3,6 +3,7 @@ import { BaseLink } from "../Link";
 
 type LinkButtonProps = {
   id?: string;
+  blank?: boolean;
   className?: string;
   href: string;
   text: string;
@@ -10,6 +11,7 @@ type LinkButtonProps = {
 
 export const LinkButton: React.FC<LinkButtonProps> = ({
   id,
+  blank,
   className,
   href,
   text,
@@ -22,7 +24,7 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
       >
         <BaseLink
           id={id}
-          blank={true}
+          blank={blank}
           href={href}
           className={twMerge(
             "relative font-orbitron text-xs tracking-widest text-white-200 sm:text-sm",
