@@ -15,8 +15,8 @@ export const Contact: React.FC = () => {
   return (
     <section className="mx-auto flex h-72 w-screen items-start justify-evenly bg-black-200 pt-14 text-xl text-white-200 sm:pt-24">
       <div className="flex gap-6 sm:gap-20">
-        <LinkButton href={GITHUB_LINK} text="GitHub" />
-        <LinkButton href={TWITTER_LINK} text="X-(Twitter)" />
+        <LinkButton blank={true} href={GITHUB_LINK} text="GitHub" />
+        <LinkButton blank={true} href={TWITTER_LINK} text="X-(Twitter)" />
       </div>
       <RotateButton
         href="#do_not_jump"
