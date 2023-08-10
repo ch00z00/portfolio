@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { twMerge } from "tailwind-merge";
+import { BaseLink } from "../Link";
 
 type LinkButtonProps = {
   id?: string;
@@ -20,8 +20,9 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
         type="button"
         className="relative inline-flex items-center justify-start overflow-hidden"
       >
-        <Link
+        <BaseLink
           id={id}
+          blank={true}
           href={href}
           className={twMerge(
             "relative font-orbitron text-xs tracking-widest text-white-200 sm:text-sm",
@@ -29,7 +30,7 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
           )}
         >
           {text}
-        </Link>
+        </BaseLink>
       </button>
     </>
   );
