@@ -39,7 +39,7 @@ export const ArticlePageLayout: React.FC<Props> = ({
       <Navigator />
       <div className="flex flex-col bg-black-100 pb-40 pt-20">
         <ArticleHero article={article} />
-        <div className="mt-12 flex flex-row">
+        <div className="mt-6 flex flex-row md:mt-12">
           <ArticleNum article={article} />
           <ArticleBody article={article} />
           {/* <ArticleSidebar article={article} /> */}
