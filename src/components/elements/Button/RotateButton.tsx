@@ -7,7 +7,7 @@ type Props = {
   onClick?: (event?: React.MouseEvent<HTMLElement, MouseEvent>) => void;
   bef_txt: string;
   aft_txt: string;
-  result_txt: string;
+  result_txt?: string;
 };
 
 export const RotateButton: React.FC<Props> = ({
@@ -44,6 +44,7 @@ export const RotateButton: React.FC<Props> = ({
       gsap.to(result_txt, { y: "200%", ease: "power2.out" });
     });
     target.addEventListener("click", () => {
+      // onClick action
       gsap.to(befTxt, { y: "-100%", ease: "power2.out" });
       gsap.to(aftTxt, { y: "-200%", ease: "power2.out" });
       gsap.to(result_txt, { y: "-200%", ease: "power2.out" });
