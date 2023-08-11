@@ -19,10 +19,10 @@ export const Contact: React.FC = () => {
         <LinkButton blank={true} href={TWITTER_LINK} text="X-(Twitter)" />
       </div>
       <RotateButton
-        href="#do_not_jump"
-        onClick={copyToClipboard}
         bef_txt={CONTACT_ADDRESS}
         aft_txt="Copy to Clipboard"
+        result_txt={msg}
+        onClick={copyToClipboard}
       />
     </section>
   );
