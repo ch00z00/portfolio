@@ -1,22 +1,21 @@
 import { useEffect } from "react";
 import { twMerge } from "tailwind-merge";
 import gsap from "gsap";
-import { BaseLink } from "../Link";
 
 type Props = {
   className?: string;
-  href: string;
   onClick?: (event?: React.MouseEvent<HTMLElement, MouseEvent>) => void;
   bef_txt: string;
   aft_txt: string;
+  result_txt: string;
 };
 
 export const RotateButton: React.FC<Props> = ({
   className,
-  href,
   onClick,
   bef_txt,
   aft_txt,
+  result_txt,
 }) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -28,18 +27,26 @@ export const RotateButton: React.FC<Props> = ({
     const target = document.querySelector("#txts");
     /* Null guard */
     if (target === null) return;
-    /* Roll action */
     const befTxt = target.querySelector("#bef_txt");
     const aftTxt = target.querySelector("#aft_txt");
+    const result_txt = target.querySelector("#result_txt");
+    /* Roll action */
     target.addEventListener("mouseenter", () => {
       // onEnter action
       gsap.to(befTxt, { y: "-100%", ease: "power2.out" });
       gsap.to(aftTxt, { y: "-100%", ease: "power2.out" });
+      gsap.to(result_txt, { y: "-100%", ease: "power2.out" });
     });
     target.addEventListener("mouseleave", () => {
       // onLeave action
       gsap.to(befTxt, { y: "0%", ease: "power2.out" });
       gsap.to(aftTxt, { y: "100%", ease: "power2.out" });
+      gsap.to(result_txt, { y: "200%", ease: "power2.out" });
+    });
+    target.addEventListener("click", () => {
+      gsap.to(befTxt, { y: "-100%", ease: "power2.out" });
+      gsap.to(aftTxt, { y: "-200%", ease: "power2.out" });
+      gsap.to(result_txt, { y: "-200%", ease: "power2.out" });
     });
   };
 
@@ -49,7 +56,7 @@ export const RotateButton: React.FC<Props> = ({
       className="relative inline-flex items-center justify-start overflow-hidden"
       onClick={onClick}
     >
-      <BaseLink href={href} blank={true} className="relative block w-full">
+      <div className="relative block w-full">
         <div
           id="txts"
           className={twMerge(
@@ -59,8 +66,9 @@ export const RotateButton: React.FC<Props> = ({
         >
           <span id="bef_txt">{bef_txt}</span>
           <span id="aft_txt">{aft_txt}</span>
+          <span id="result_txt">{result_txt}</span>
         </div>
-      </BaseLink>
+      </div>
     </button>
   );
 };
