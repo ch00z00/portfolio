@@ -7,8 +7,8 @@ export const Contact: React.FC = () => {
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(CONTACT_ADDRESS).then(
-      () => setMsg("Copied 🦄🦄🦄"),
-      () => setMsg("Failed 😭😭😭")
+      () => setMsg("🦄 Copied 🦄"),
+      () => setMsg("😭 Failed 😭")
     );
   };
 
