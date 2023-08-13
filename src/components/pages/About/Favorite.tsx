@@ -47,7 +47,7 @@ export const Favorite: React.FC = () => {
   return (
     <section
       id="fav_section"
-      className="mx-auto flex h-screen w-screen flex-col bg-black-100 py-48 text-center text-white-200 md:grid-cols-2 lg:grid lg:py-0 lg:pl-40 lg:text-start xl:pl-60"
+      className="mx-auto flex h-screen w-screen flex-col bg-green-100 py-48 text-center text-white-200 md:grid-cols-2 lg:grid lg:py-0 lg:pl-40 lg:text-start xl:pl-60"
     >
       <div
         id="slideY_fav"
