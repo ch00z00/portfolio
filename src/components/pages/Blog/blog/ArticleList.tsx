@@ -1,3 +1,4 @@
+import { AnimLinkButton } from "@/components/elements/Button";
 import { Article } from "@/types/blog";
 import Link from "next/link";
 
@@ -8,16 +9,21 @@ type Props = {
 export const ArticleList: React.FC<Props> = ({ blog }) => {
   return (
     <div>
-      <div className="h-screen bg-black-200 pt-40 font-orbitron text-2xl tracking-wider text-white-200/70">
-        <ul className="flex flex-col items-center justify-around gap-20">
+      <div className="h-screen w-screen bg-black-100 pt-40">
+        <ul className="flex flex-col items-center justify-around gap-2">
           {blog.map((blog) => (
             <li key={blog.id}>
-              <Link
+              <AnimLinkButton
                 href={`/blog/${blog.id}`}
-                className="duration-500 hover:text-3xl hover:text-white-200"
+                className="font-neuropol"
               >
-                {blog.title}
-              </Link>
+                <div className="flex items-center justify-between">
+                  <div>{blog.title}</div>
+                  <div className="rounded-full bg-black-200 px-3 text-white-200/70">
+                    →
+                  </div>
+                </div>
+              </AnimLinkButton>
             </li>
           ))}
         </ul>
