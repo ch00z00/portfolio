@@ -1,8 +1,14 @@
-import { Suspense, useEffect, useState } from "react";
-import * as THREE from "three";
+import Image from "next/image";
 
 export const HomePage: React.FC = () => {
-  const [hovNav, setHovNav] = useState("home");
-
-  return <div className="m-0 h-screen w-screen bg-black-100"></div>;
+  return (
+    <div className="flex h-screen w-screen items-center justify-center bg-black-100">
+      <Image
+        src="/assets/pom.jpeg"
+        width={400}
+        height={400}
+        alt="picture of me"
+      />
+    </div>
+  );
 };
