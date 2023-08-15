@@ -9,8 +9,8 @@ type Props = {
 export const ArticleList: React.FC<Props> = ({ blog }) => {
   return (
     <div>
-      <div className="h-screen w-screen bg-black-100 pt-40">
-        <ul className="flex flex-col items-center justify-center">
+      <div className="flex h-screen w-screen flex-col items-center justify-center bg-black-100">
+        <ul>
           {blog.map((blog) => (
             <li key={blog.id}>
               <AnimLinkButton

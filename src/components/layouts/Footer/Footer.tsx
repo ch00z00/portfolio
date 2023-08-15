@@ -13,7 +13,7 @@ const FOOTER_ITEMS = [
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="fixed bottom-14 z-10 flex w-screen items-center justify-between px-10 sm:px-24">
+    <footer className="fixed bottom-8 z-10 flex w-screen items-center justify-between px-10 sm:px-16">
       {FOOTER_ITEMS.map((item) => (
         <ul key={item.name}>
           <li className="relative inline-block overflow-hidden" id="nav_btn">
