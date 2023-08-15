@@ -13,7 +13,7 @@ const HEADER_ITEMS = [
 
 export const Header: React.FC = () => {
   return (
-    <header className="fixed top-14 z-10 flex w-screen items-center justify-between px-10 sm:px-24">
+    <header className="fixed top-8 z-10 flex w-screen items-center justify-between px-10 sm:px-16">
       {HEADER_ITEMS.map((item) => (
         <ul key={item.name}>
           <li className="relative inline-block overflow-hidden" id="nav_btn">
