@@ -11,7 +11,7 @@ export const HomePage: React.FC = () => {
 
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-black-100">
-      <div className="z-10 flex flex-col gap-12 lg:gap-8">
+      <div className="relative z-10 flex flex-col gap-12 lg:gap-8">
         <RevealText text="Atheist" className="justify-start" />
         <RevealText text="Minimalist" className="justify-end" />
         <RevealText text="Optimist" className="justify-start" />

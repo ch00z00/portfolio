@@ -37,7 +37,7 @@ export const RevealText: React.FC<Props> = ({ text, className }) => {
       <div
         id="text"
         className={twMerge(
-          "overflow-hidden font-neuropol text-5xl text-white-200 sm:text-8xl lg:text-9xl",
+          "overflow-hidden font-neuropol text-5xl tracking-widest text-white-200 md:text-8xl lg:text-9xl",
           className
         )}
       >
