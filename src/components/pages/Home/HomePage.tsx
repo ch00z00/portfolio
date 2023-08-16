@@ -25,7 +25,7 @@ export const HomePage: React.FC = () => {
               width={300}
               height={300}
               alt="picture of me"
-              className="fixed"
+              className="fixed rounded-3xl"
             />
           </MediaQuery>
           <MediaQuery minWidth={640}>
@@ -34,7 +34,7 @@ export const HomePage: React.FC = () => {
               width={500}
               height={500}
               alt="picture of me"
-              className="fixed"
+              className="fixed rounded-3xl"
             />
           </MediaQuery>
         </>
