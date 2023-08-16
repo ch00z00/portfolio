@@ -8,10 +8,10 @@ export const AboutLayout: React.FC = () => {
   return (
     <>
       <AboutHero />
-      <BasicInfo />
+      {/* <BasicInfo />
       <Skills />
       <Favorite />
-      <Contact />
+      <Contact /> */}
     </>
   );
 };

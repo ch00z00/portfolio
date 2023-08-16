@@ -27,7 +27,7 @@ export const RevealText: React.FC<Props> = ({ text, className }) => {
       {
         ease: "power4.out",
         yPercent: 0,
-        duration: 1.5,
+        duration: 1.7,
       }
     );
   };
