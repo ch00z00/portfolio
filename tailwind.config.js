@@ -1,3 +1,7 @@
+/* TODO
+ * Add dark-mode
+ */
+
 module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./src/**/*.{html,js}"],
   theme: {
