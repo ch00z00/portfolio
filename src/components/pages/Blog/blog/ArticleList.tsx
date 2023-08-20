@@ -1,6 +1,5 @@
 import { AnimLinkButton } from "@/components/elements/Button";
 import { Article } from "@/types/blog";
-import Link from "next/link";
 
 type Props = {
   blog: Article[];
