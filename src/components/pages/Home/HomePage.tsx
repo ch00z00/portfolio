@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import MediaQuery from "react-responsive";
+
 import { RevealText } from "@/components/elements/Text";
 
 export const HomePage: React.FC = () => {
@@ -21,7 +22,7 @@ export const HomePage: React.FC = () => {
         <div className="relative overflow-hidden rounded-full bg-cover bg-no-repeat">
           <MediaQuery maxWidth={639}>
             <Image
-              src="/assets/pom.jpeg"
+              src="/assets/pic_of_me.jpeg"
               width={300}
               height={300}
               alt="picture of me"
@@ -30,7 +31,7 @@ export const HomePage: React.FC = () => {
           </MediaQuery>
           <MediaQuery minWidth={640}>
             <Image
-              src="/assets/pom.jpeg"
+              src="/assets/pic_of_me.jpeg"
               width={500}
               height={500}
               alt="picture of me"

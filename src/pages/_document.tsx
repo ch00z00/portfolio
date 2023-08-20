@@ -45,7 +45,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="m-0 overflow-hidden">
+      <body className="m-0 overflow-x-hidden">
         <Main />
         <NextScript />
         {/* <div
