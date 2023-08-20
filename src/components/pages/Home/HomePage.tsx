@@ -19,23 +19,23 @@ export const HomePage: React.FC = () => {
         <RevealText text="Sociopath" className="justify-end" />
       </div> */}
       {isClient ? (
-        <div className="relative overflow-hidden rounded-full bg-cover bg-no-repeat">
+        <div className="relative overflow-hidden">
           <MediaQuery maxWidth={639}>
             <Image
               src="/assets/pic_of_me.jpeg"
-              width={300}
-              height={300}
+              width={200}
+              height={200}
               alt="picture of me"
-              className="rounded-3xl invert transition duration-500 ease-in-out hover:scale-125 hover:invert-0"
+              className="scale-125 invert transition duration-500 ease-in-out"
             />
           </MediaQuery>
           <MediaQuery minWidth={640}>
             <Image
               src="/assets/pic_of_me.jpeg"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               alt="picture of me"
-              className="rounded-3xl invert transition duration-500 ease-in-out hover:scale-125 hover:invert-0"
+              className="scale-125 invert transition duration-500 ease-in-out"
             />
           </MediaQuery>
         </div>
