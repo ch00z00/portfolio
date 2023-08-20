@@ -6,9 +6,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./src/**/*.{html,js}"],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   "tv-noise": "url('/assets/tv_noise.gif')",
-      // },
+      backgroundImage: {
+        "pic-of-me": "url('/assets/pic_of_me_2.jpeg')",
+      },
       fontFamily: {
         syne: ['"Syne"', "sans-serif"],
         orbitron: ['"Orbitron"', "sans-serif"],
