@@ -6,9 +6,6 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}", "./src/**/*.{html,js}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "pic-of-me": "url('/assets/pic_of_me_2.jpeg')",
-      },
       fontFamily: {
         syne: ['"Syne"', "sans-serif"],
         orbitron: ['"Orbitron"', "sans-serif"],
@@ -55,6 +52,9 @@ module.exports = {
       },
       orange: {
         100: "#EF3E1D",
+      },
+      yellow: {
+        100: "#CDC8BC",
       },
     },
   },
