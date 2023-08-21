@@ -3,9 +3,9 @@ export const GITHUB_LINK = "https://github.com/ch00z00";
 export const TWITTER_LINK = "https://twitter.com/choozoo10";
 
 export const DESCRIPTION = {
-  base: "Hi, my name is choozoo. I've been working as a front-end developer in Niigata Japan for 3 yrs.",
-  blog: "This is my blog page. I post articles about my hobbies from now on.",
-  arch: "This is a gallery of my past work.",
+  base: "Hi, my name is Yusuke Seki. I've been working as a front-end developer in Japan for 2 years.",
+  blog: "This is my blog page. I post articles about my hobbies, techs and others.",
+  arch: "I plan to post some of my past work here, etc., but I'm still working on it.",
 };
 
 export const hovNavItems = [
