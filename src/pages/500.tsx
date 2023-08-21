@@ -2,11 +2,11 @@ import { AnimLinkButton } from "@/components/elements/Button";
 import { RevealText } from "@/components/elements/Text";
 import { NextPage } from "next";
 
-const Custom404: NextPage = () => {
+const Custom500: NextPage = () => {
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center gap-8 bg-black-100 text-yellow-100">
       <RevealText
-        text="404 - Page Not Found"
+        text="500 - Server-side Error Occurred"
         className="font-earth text-2xl tracking-tighter md:text-3xl lg:text-5xl"
       />
       <AnimLinkButton href="/" className="w-[300px] font-neuropol sm:w-[450px]">
@@ -19,4 +19,4 @@ const Custom404: NextPage = () => {
   );
 };
 
-export default Custom404;
+export default Custom500;
