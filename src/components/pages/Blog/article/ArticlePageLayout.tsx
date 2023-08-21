@@ -5,7 +5,6 @@ import { DESCRIPTION } from "@/const";
 import { Article } from "@/types/blog";
 import { ArticleHero } from "./ArticleHero";
 import { ArticleBody } from "./ArticleBody";
-import { ArticleNum } from "./ArticleNum";
 import { ArticleSidebar } from "./ArticleSidebar";
 
 type Props = {
@@ -40,7 +39,6 @@ export const ArticlePageLayout: React.FC<Props> = ({
       <div className="flex flex-col bg-black-100 pb-40 pt-20">
         <ArticleHero article={article} />
         <div className="mt-6 flex flex-row md:mt-12">
-          <ArticleNum article={article} />
           <ArticleBody article={article} />
           {/* <ArticleSidebar article={article} /> */}
         </div>
