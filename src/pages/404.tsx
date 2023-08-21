@@ -9,12 +9,20 @@ const Custom404: NextPage = () => {
         text="404 - Page Not Found"
         className="font-earth text-2xl tracking-tighter md:text-3xl lg:text-5xl"
       />
-      <AnimLinkButton href="/" className="w-[300px] font-neuropol sm:w-[450px]">
-        <div className="flex items-center justify-between text-yellow-100">
-          <div>Back to the HOME</div>
-          <div className="rounded-full bg-black-200 px-3 text-white-200">→</div>
-        </div>
-      </AnimLinkButton>
+      <div className="group">
+        <AnimLinkButton
+          href="/"
+          className="w-[300px] font-neuropol sm:w-[450px]"
+        >
+          <div className="flex items-center justify-between text-yellow-100">
+            <div>Back to the HOME</div>
+            <div className="rounded-full bg-black-200 px-3 text-white-200">
+              →
+            </div>
+          </div>
+        </AnimLinkButton>
+        <hr className="mx-auto w-full text-white-100/30 group-hover:invisible" />
+      </div>
     </div>
   );
 };

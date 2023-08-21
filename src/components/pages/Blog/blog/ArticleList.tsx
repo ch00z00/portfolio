@@ -11,7 +11,7 @@ export const ArticleList: React.FC<Props> = ({ blog }) => {
       <div className="flex h-screen w-screen flex-col items-center justify-center bg-black-100">
         <ul>
           {blog.map((blog) => (
-            <li key={blog.id}>
+            <li key={blog.id} className="group">
               <AnimLinkButton
                 href={`/blog/${blog.id}`}
                 className="w-[300px] font-neuropol sm:w-[500px]"
@@ -23,6 +23,7 @@ export const ArticleList: React.FC<Props> = ({ blog }) => {
                   </div>
                 </div>
               </AnimLinkButton>
+              <hr className="mx-auto w-full text-white-100/30 group-hover:invisible" />
             </li>
           ))}
         </ul>
