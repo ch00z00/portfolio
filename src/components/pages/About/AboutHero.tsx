@@ -7,18 +7,11 @@ import { RevealText } from "@/components/elements/Text";
 export const AboutHero: React.FC = () => {
   const [isClient, setIsClient] = useState(false);
   useEffect(() => {
-    const scroll: LocomotiveScroll = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]")! as HTMLElement,
-      smooth: true,
-    });
     setIsClient(true);
   }, []);
 
   return (
-    <div
-      data-scroll-container
-      className="flex items-center justify-center bg-black-100 py-44 text-white-200"
-    >
+    <div className="flex items-center justify-center bg-black-100 py-44 text-white-200">
       {/* <RevealText
         text="Hello"
         className="tracking-wide md:text-6xl lg:text-8xl"
@@ -80,6 +73,15 @@ export const AboutHero: React.FC = () => {
               width={700}
               height={700}
               alt="6"
+            />
+          </div>
+          {/* 7 */}
+          <div data-scroll data-scroll-speed="7">
+            <Image
+              src="/assets/about/7.jpeg"
+              width={700}
+              height={700}
+              alt="7"
             />
           </div>
         </div>
