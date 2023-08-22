@@ -18,7 +18,7 @@ export const AboutHero: React.FC = () => {
       /> */}
       {isClient ? (
         <div
-          className="space-y-28"
+          className="space-y-32"
           data-scroll-section
           data-scroll-section-id="section0"
         >
