@@ -1,25 +1,21 @@
 import { AboutHero } from "./AboutHero";
-import { Favorite } from "./Favorite";
-import { BasicInfo } from "./BasicInfo";
-import { Skills } from "./Skills";
-import { Contact } from "./Contact";
-import dynamic from "next/dynamic";
-
-// ReferenceError could not be avoided, so I was forced to apply dynamic.
-const DynamicComponent = dynamic(
-  () => import("../../pages/About/AboutHero").then((mod) => mod.AboutHero),
-  { ssr: false }
-);
+import LocomotiveScroll from "locomotive-scroll";
 
 export const AboutLayout: React.FC = () => {
+  const containerElement = document.querySelector("[data-scroll-container]");
+
+  if (containerElement) {
+    const scroll: LocomotiveScroll = new LocomotiveScroll({
+      el: containerElement as HTMLElement,
+      smooth: true,
+    });
+  } else {
+    // TODO: Implement error handling and alternative processing.
+  }
+
   return (
-    <>
-      <DynamicComponent />
-      {/* <AboutHero /> */}
-      {/* <BasicInfo />
-      <Skills />
-      <Favorite />
-      <Contact /> */}
-    </>
+    <div data-scroll-container>
+      <AboutHero />
+    </div>
   );
 };
