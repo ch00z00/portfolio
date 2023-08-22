@@ -14,7 +14,7 @@ export const AboutLayout: React.FC = () => {
   }
 
   return (
-    <div data-scroll-container>
+    <div className="bg-black-100" data-scroll-container>
       <AboutHero />
     </div>
   );
