@@ -63,11 +63,11 @@ export const AboutHero: React.FC = () => {
             data-scroll
             data-scroll-speed="4"
           >
-            <div className="z-10 -mr-96 pb-14">Chapt-4</div>
+            <div className="z-10 -mr-64 pb-14">Chapt-4</div>
             <Image
               src="/assets/about/3.jpeg"
-              width={700}
-              height={700}
+              width={600}
+              height={600}
               alt="4"
             />
           </section>
@@ -79,11 +79,11 @@ export const AboutHero: React.FC = () => {
           >
             <Image
               src="/assets/about/5.jpeg"
-              width={700}
-              height={700}
+              width={500}
+              height={500}
               alt="5"
             />
-            <div className="z-10 -ml-72 pt-64">Chapt-5</div>
+            <div className="z-10 -ml-60 pt-56">Chapt-5</div>
           </section>
           {/* 6 */}
           <section

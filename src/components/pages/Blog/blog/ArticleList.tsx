@@ -47,7 +47,7 @@ export const ArticleList: React.FC<Props> = ({ blog }) => {
             <li id="article" key={blog.id} className="group">
               <AnimLinkButton
                 href={`/blog/${blog.id}`}
-                className="w-[300px] font-neuropol sm:w-[500px]"
+                className="w-[300px] font-neuropol md:w-[700px]"
               >
                 <div className="flex items-center justify-between">
                   <div>{blog.title}</div>
