@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 /*
  * 全ページを初期化するためのコンポーネント
@@ -7,5 +8,9 @@ import type { AppProps } from "next/app";
  */
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <ParallaxProvider scrollAxis="vertical">
+      <Component {...pageProps} />
+    </ParallaxProvider>
+  );
 }

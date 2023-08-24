@@ -1,90 +1,87 @@
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export const AboutHero: React.FC = () => {
   const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
     setIsClient(true);
   }, []);
 
   return (
-    <div className="mx-auto w-full max-w-full px-20 py-36">
+    <div className="mx-auto w-full max-w-full px-20 py-48 md:px-40">
       {isClient ? (
-        <div className="space-y-32 font-neuropol text-3xl text-yellow-100 md:text-6xl lg:text-8xl">
+        <div className="space-y-36 font-neuropol text-3xl text-yellow-100 md:text-6xl lg:text-8xl">
           {/* 1 */}
           <section className="flex w-full flex-row items-center justify-center">
-            <Image
-              src="/assets/about/1.jpeg"
-              width={700}
-              height={700}
-              alt="1"
+            <ParallaxBanner
+              layers={[{ image: "/assets/about/1.jpeg", speed: -10 }]}
+              className="aspect-[2/1]"
             />
-            <div className="z-20 -ml-96" data-scroll data-scroll-speed="3">
-              Chapt.1
-            </div>
+            <Parallax speed={15}>
+              <div className="z-20 -ml-60">Chap.1</div>
+            </Parallax>
           </section>
           {/* 2 */}
           <section className="flex w-full flex-row items-center justify-center">
-            <div className="z-20 -mr-80 pt-64">Chapt.2</div>
-
-            <Image
-              src="/assets/about/2.jpeg"
-              width={700}
-              height={700}
-              alt="2"
+            <Parallax speed={10} className="z-10">
+              <div className="-mr-40">Chap.2</div>
+            </Parallax>
+            <ParallaxBanner
+              layers={[{ image: "/assets/about/2.jpeg", speed: -15 }]}
+              className="aspect-[2/1]"
             />
           </section>
           {/* 3 */}
           <section className="flex w-full flex-row items-center justify-center">
-            <Image
-              src="/assets/about/4.jpeg"
-              width={700}
-              height={700}
-              alt="3"
+            <ParallaxBanner
+              layers={[{ image: "/assets/about/4.jpeg", speed: -15 }]}
+              className="aspect-[2/1]"
             />
-            <div className="z-20 -ml-60 pt-40">Chapt.3</div>
+            <Parallax speed={15}>
+              <div className="z-20 -ml-60 pt-14">Chap.3</div>
+            </Parallax>
           </section>
           {/* 4 */}
           <section className="flex w-full flex-row items-center justify-center">
-            <div className="z-20 -mr-64 pb-14">Chapt.4</div>
+            <Parallax speed={15} className="z-10">
+              <div className="-mr-64 pb-14">Chap.4</div>
+            </Parallax>
 
-            <Image
-              src="/assets/about/3.jpeg"
-              width={600}
-              height={600}
-              alt="4"
+            <ParallaxBanner
+              layers={[{ image: "/assets/about/3.jpeg", speed: -15 }]}
+              className="aspect-[5/3]"
             />
           </section>
           {/* 5 */}
           <section className="flex w-full flex-row items-center justify-center">
-            <Image
-              src="/assets/about/5.jpeg"
-              width={500}
-              height={500}
-              alt="5"
+            <ParallaxBanner
+              layers={[{ image: "/assets/about/5.jpeg", speed: -15 }]}
+              className="aspect-[1]"
             />
-            <div className="z-20 -ml-60 pt-56">Chapt.5</div>
+            <Parallax speed={30}>
+              <div className="z-20 -ml-12">Chap.5</div>
+            </Parallax>
           </section>
           {/* 6 */}
           <section className="flex w-full flex-row items-center justify-center">
-            <div className="z-20 -mr-96 pt-16">Chapt.6</div>
-
-            <Image
-              src="/assets/about/6.jpeg"
-              width={700}
-              height={700}
-              alt="6"
+            <Parallax speed={15} className="z-10">
+              <div className="-mr-96 pt-16">Chap.6</div>
+            </Parallax>
+            <ParallaxBanner
+              layers={[{ image: "/assets/about/6.jpeg", speed: -15 }]}
+              className="aspect-[3/1]"
             />
           </section>
           {/* 7 */}
           <section className="flex w-full flex-row items-center justify-center">
-            <Image
-              src="/assets/about/7.jpeg"
-              width={700}
-              height={700}
-              alt="7"
+            <ParallaxBanner
+              layers={[{ image: "/assets/about/7.jpeg", speed: -15 }]}
+              className="aspect-[2/1]"
             />
-            <div className="z-20 -ml-80 pt-20">Chapt.7</div>
+            <Parallax speed={30}>
+              <div className="z-20 -ml-80 pb-20">Chap.7</div>
+            </Parallax>
           </section>
         </div>
       ) : (
