@@ -18,8 +18,8 @@ export const AboutHero: React.FC = () => {
               layers={[{ image: "/assets/about/1.jpeg", speed: -10 }]}
               className="aspect-[2/1]"
             />
-            <Parallax speed={15}>
-              <div className="z-20 -ml-60">Chap.1</div>
+            <Parallax speed={15} className="z-10">
+              <div className="-ml-60">Chap.1</div>
             </Parallax>
           </section>
           {/* 2 */}
@@ -38,8 +38,8 @@ export const AboutHero: React.FC = () => {
               layers={[{ image: "/assets/about/4.jpeg", speed: -15 }]}
               className="aspect-[2/1]"
             />
-            <Parallax speed={15}>
-              <div className="z-20 -ml-60 pt-14">Chap.3</div>
+            <Parallax speed={25} className="z-10">
+              <div className="-ml-60">Chap.3</div>
             </Parallax>
           </section>
           {/* 4 */}
@@ -57,10 +57,10 @@ export const AboutHero: React.FC = () => {
           <section className="flex w-full flex-row items-center justify-center">
             <ParallaxBanner
               layers={[{ image: "/assets/about/5.jpeg", speed: -15 }]}
-              className="aspect-[1]"
+              className="aspect-[2/3]"
             />
-            <Parallax speed={30}>
-              <div className="z-20 -ml-12">Chap.5</div>
+            <Parallax speed={20} className="z-10">
+              <div className="-ml-12">Chap.5</div>
             </Parallax>
           </section>
           {/* 6 */}
@@ -79,8 +79,8 @@ export const AboutHero: React.FC = () => {
               layers={[{ image: "/assets/about/7.jpeg", speed: -15 }]}
               className="aspect-[2/1]"
             />
-            <Parallax speed={30}>
-              <div className="z-20 -ml-80 pb-20">Chap.7</div>
+            <Parallax speed={30} className="z-10">
+              <div className="-ml-80">Chap.7</div>
             </Parallax>
           </section>
         </div>
