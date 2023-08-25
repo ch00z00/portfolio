@@ -1,6 +1,8 @@
-// import Image from "next/image";
-// import { FadeInWrapper } from "@/components/effects/FadeinWrapper";
-// import WaterTexture from "@/components/effects/WaterTexture";
+import React, { useEffect, useRef } from "react";
+import * as THREE from "three";
+import Image from "next/image";
+import { FadeInWrapper } from "@/components/effects/FadeinWrapper";
+import WaterTexture from "@/components/effects/WaterTexture";
 
 // // TODO: Implement a water-like distortion effect on GIF.
 
@@ -21,10 +23,6 @@
 //     </div>
 //   );
 // };
-
-import React, { useEffect, useRef } from "react";
-import * as THREE from "three";
-import WaterTexture from "@/components/effects/WaterTexture";
 
 const ArchivePage: React.FC = () => {
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
@@ -98,7 +96,21 @@ const ArchivePage: React.FC = () => {
     };
   }, []);
 
-  return null; // This component doesn't render any React elements directly
+  return (
+    <div className="flex h-screen w-screen items-center justify-center bg-black-100">
+      <FadeInWrapper>
+        {/* Apply WaterTexture to Image element */}
+        <WaterTexture src="/assets/tv_noise.gif">
+          <Image
+            src="/assets/tv_noise.gif"
+            width={900}
+            height={900}
+            alt="tv_noise"
+          />
+        </WaterTexture>
+      </FadeInWrapper>
+    </div>
+  );
 };
 
 export default ArchivePage;
