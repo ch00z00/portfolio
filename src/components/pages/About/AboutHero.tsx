@@ -9,14 +9,14 @@ export const AboutHero: React.FC = () => {
   }, []);
 
   return (
-    <div className="mx-auto w-full max-w-full px-20 py-48 md:px-40">
+    <div className="mx-auto w-full max-w-full px-20 py-52 md:px-40">
       {isClient ? (
-        <div className="space-y-36 font-neuropol text-3xl text-yellow-100 md:text-6xl lg:text-8xl">
+        <div className="space-y-32 font-neuropol text-3xl text-yellow-100 sm:text-6xl lg:text-8xl">
           {/* 1 */}
           <section className="flex w-full flex-row items-center justify-center">
             <ParallaxBanner
               layers={[{ image: "/assets/about/1.jpeg", speed: -10 }]}
-              className="aspect-[2/1]"
+              className="aspect-[5/3]"
             />
             <Parallax speed={15} className="z-10">
               <div className="-ml-60">Chap.1</div>
@@ -25,11 +25,11 @@ export const AboutHero: React.FC = () => {
           {/* 2 */}
           <section className="flex w-full flex-row items-center justify-center">
             <Parallax speed={10} className="z-10">
-              <div className="-mr-40">Chap.2</div>
+              <div className="-mr-60">Chap.2</div>
             </Parallax>
             <ParallaxBanner
               layers={[{ image: "/assets/about/2.jpeg", speed: -15 }]}
-              className="aspect-[2/1]"
+              className="aspect-[3/2]"
             />
           </section>
           {/* 3 */}
@@ -38,7 +38,7 @@ export const AboutHero: React.FC = () => {
               layers={[{ image: "/assets/about/4.jpeg", speed: -15 }]}
               className="aspect-[2/1]"
             />
-            <Parallax speed={25} className="z-10">
+            <Parallax speed={10} className="z-10">
               <div className="-ml-60">Chap.3</div>
             </Parallax>
           </section>
@@ -50,7 +50,7 @@ export const AboutHero: React.FC = () => {
 
             <ParallaxBanner
               layers={[{ image: "/assets/about/3.jpeg", speed: -15 }]}
-              className="aspect-[5/3]"
+              className="aspect-[5/3] scale-110"
             />
           </section>
           {/* 5 */}
@@ -70,14 +70,14 @@ export const AboutHero: React.FC = () => {
             </Parallax>
             <ParallaxBanner
               layers={[{ image: "/assets/about/6.jpeg", speed: -15 }]}
-              className="aspect-[3/1]"
+              className="aspect-[2/1]"
             />
           </section>
           {/* 7 */}
           <section className="flex w-full flex-row items-center justify-center">
             <ParallaxBanner
               layers={[{ image: "/assets/about/7.jpeg", speed: -15 }]}
-              className="aspect-[2/1]"
+              className="aspect-[3/2]"
             />
             <Parallax speed={30} className="z-10">
               <div className="-ml-80">Chap.7</div>
