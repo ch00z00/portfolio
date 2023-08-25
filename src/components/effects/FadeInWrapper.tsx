@@ -9,7 +9,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const FadeinWrapper: React.FC<Props> = ({ children }) => {
+export const FadeInWrapper: React.FC<Props> = ({ children }) => {
   const { ref, inView } = useInView({
     rootMargin: "-50px",
     // Execute only once.
