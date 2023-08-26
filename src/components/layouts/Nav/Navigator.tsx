@@ -30,14 +30,13 @@ export const Navigator: React.FC = () => {
     );
     gsap.fromTo(
       "#nav_btn #nav_label",
-      { alpha: 0 },
+      { opacity: 0 },
       {
-        alpha: 1,
+        opacity: 1,
         duration: 0.5,
         delay: 0.5,
         stagger,
-      },
-      "<"
+      }
     );
   };
 
@@ -48,7 +47,7 @@ export const Navigator: React.FC = () => {
       <div className="invisible fixed bottom-4 z-10 flex w-screen items-center justify-center px-14 font-earth text-xs uppercase text-white-200/80 sm:visible sm:px-24">
         <span className="text-lg">©</span>2023 Yusuke Seki
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
