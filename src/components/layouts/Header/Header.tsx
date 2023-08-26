@@ -6,7 +6,7 @@ const HEADER_ITEMS = [
     href: "/",
   },
   {
-    name: "ABOUT",
+    name: "MENU",
     href: "/about",
   },
 ];
