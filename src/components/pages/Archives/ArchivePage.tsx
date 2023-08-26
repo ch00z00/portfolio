@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 import { FadeInWrapper } from "@/components/effects/FadeInWrapper";
 
-// TODO: Implement a water-like distortion effect on GIF.
+// TODO: [priority: low] Implement a water-like distortion effect on GIF.
 
 export const ArchivePage: React.FC = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center bg-red-100">
+    <div className="flex h-screen w-screen items-center justify-center bg-black-100">
       <FadeInWrapper>
         <Image
           src="/assets/tv_noise.gif"
