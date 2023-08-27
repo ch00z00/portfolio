@@ -11,6 +11,7 @@ module.exports = {
         orbitron: ['"Orbitron"', "sans-serif"],
         neuropol: ['"Neuropol"', "sans-serif"],
         earth: ['"Earth"', "sans-serif"],
+        "march-evoked": ['"March_Evoked"', "sans-serif"],
       },
       animation: {
         "fade-in-bottom": "fade-in-bottom 1.2s ease-out both",
