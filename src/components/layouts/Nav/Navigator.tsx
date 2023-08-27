@@ -44,10 +44,11 @@ export const Navigator: React.FC = () => {
       <Header />
       {/* Hide this when screen size is reduced to sm */}
       <div
-        className="invisible fixed bottom-4 z-10 flex w-screen items-center justify-center px-14
-                  font-march-evoked text-xs uppercase text-yellow-100 sm:visible sm:px-24"
+        className="invisible fixed bottom-4 z-10 mx-auto flex w-fit items-center justify-center rounded-full
+                  border border-white-200 px-14 font-orbitron text-xs uppercase tracking-wide text-yellow-100 sm:visible sm:px-2"
       >
-        <span className="text-lg">©</span>2023 Yusuke Seki
+        <span className="text-base">©</span>
+        2023 Yusuke Seki
       </div>
       {/* <Footer /> */}
     </>
