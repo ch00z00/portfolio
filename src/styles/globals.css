@@ -22,3 +22,7 @@
   font-family: "earth";
   src: url("../../public/fonts/Earth 2073.ttf");
 }
+@font-face {
+  font-family: "march_evoked";
+  src: url("../../public/fonts/marchevoked-demo.otf");
+}

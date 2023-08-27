@@ -11,7 +11,7 @@ export const AboutHero: React.FC = () => {
   return (
     <div className="mx-auto w-full max-w-full px-20 py-52 md:px-40">
       {isClient ? (
-        <div className="space-y-32 font-neuropol text-3xl text-yellow-100 sm:text-6xl lg:text-8xl">
+        <div className="space-y-32 font-march-evoked text-3xl text-yellow-100 sm:text-6xl lg:text-8xl">
           {/* 1 */}
           <section className="flex w-full flex-row items-center justify-center">
             <ParallaxBanner
