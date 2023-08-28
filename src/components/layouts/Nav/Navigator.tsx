@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import { AnimLinkButton, RectAnimButton } from "@/components/elements/Button";
+import { AnimLinkButton } from "@/components/elements/Button";
+import { Header } from "../Header";
 
 type Props = {
   onClick: React.MouseEventHandler<HTMLButtonElement>;
@@ -57,25 +58,13 @@ export const Navigator: React.FC<Props> = ({ onClick }) => {
 
   return (
     <>
-      {!isOpen ? (
-        <header className="fixed top-8 z-10 flex w-screen items-center justify-between px-10 sm:px-16">
-          <RectAnimButton text="HOME" href="/" />
-          {/* Hide this when screen size is reduced to sm */}
-          <div className="invisible flex w-fit items-center justify-center rounded-full border px-2 font-orbitron text-xs tracking-wide text-yellow-100 sm:visible">
-            <span className="text-base">©</span>
-            2023 YUSUKE SEKI
-          </div>
-          <button
-            type="button"
-            className="text-white-100"
-            onClick={handleOpenMenu}
-          >
-            MENU
-          </button>
-        </header>
-      ) : null}
+      {!isOpen ? <Header onClick={handleOpenMenu} /> : null}
       {/* Show this when screen size is reduced to sm */}
-      <div className="visible fixed bottom-4 z-10 flex w-fit items-center justify-center rounded-full border px-2 font-orbitron text-xs tracking-wide text-yellow-100 sm:invisible">
+      <div
+        className="visible fixed bottom-4 z-10 flex w-fit items-center justify-center
+                      rounded-full border px-2 font-orbitron text-xs tracking-wide
+                      text-yellow-100 sm:invisible"
+      >
         <span className="text-base">©</span>
         2023 YUSUKE SEKI
       </div>
