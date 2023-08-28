@@ -11,13 +11,17 @@ export const Header: React.FC<Props> = ({ onClick }) => {
       {/* Hide this when screen size is reduced to sm */}
       <div
         className="invisible flex w-fit items-center justify-center
-                      rounded-full border px-2 font-orbitron text-xs
+                      rounded-full border px-2 text-xs
                       tracking-wide text-yellow-100 sm:visible"
       >
-        <span className="text-base">©</span>
+        <span className="text-sm">©</span>
         2023 YUSUKE SEKI
       </div>
-      <button type="button" className="text-white-100" onClick={onClick}>
+      <button
+        type="button"
+        className="font-orbitron text-xs text-white-100 sm:text-sm"
+        onClick={onClick}
+      >
         MENU
       </button>
     </header>
