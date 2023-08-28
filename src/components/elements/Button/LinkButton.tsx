@@ -5,22 +5,25 @@ type LinkButtonProps = {
   id?: string;
   blank?: boolean;
   className?: string;
-  href: string;
   text: string;
+  href: string;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 export const LinkButton: React.FC<LinkButtonProps> = ({
   id,
   blank,
   className,
-  href,
   text,
+  href,
+  onClick,
 }) => {
   return (
     <>
       <button
         type="button"
         className="relative inline-flex items-center justify-start overflow-hidden"
+        onClick={onClick}
       >
         <BaseLink
           id={id}
