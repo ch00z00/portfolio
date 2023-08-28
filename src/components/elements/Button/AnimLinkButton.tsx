@@ -21,7 +21,9 @@ export const AnimLinkButton: React.FC<AnimLinkButtonProps> = ({
     <>
       <button
         type="button"
-        className="group inline-flex items-center overflow-hidden py-4 duration-200 hover:rounded-md hover:bg-white-100/20"
+        className="group inline-flex items-center
+                  overflow-hidden py-4 duration-200
+                  hover:rounded-md hover:bg-white-100/20"
       >
         <BaseLink
           id={id}
