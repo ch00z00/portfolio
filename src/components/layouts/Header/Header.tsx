@@ -2,9 +2,10 @@ import { RectAnimButton } from "@/components/elements/Button";
 
 type HeaderProps = {
   hamRef: React.RefObject<HTMLDivElement>;
+  isMenuOpen: boolean;
 };
 
-export const Header: React.FC<HeaderProps> = ({ hamRef }) => {
+export const Header: React.FC<HeaderProps> = ({ hamRef, isMenuOpen }) => {
   return (
     <div className="flex h-full w-screen items-center justify-between">
       <RectAnimButton text="HOME" href="/" />
@@ -16,8 +17,10 @@ export const Header: React.FC<HeaderProps> = ({ hamRef }) => {
         <span className="text-sm">©</span>
         2023 YUSUKE SEKI
       </div>
-      <div className="ham" ref={hamRef}>
-        <span className="cursor-pointer text-2xl text-white-100">☰</span>
+      <div ref={hamRef}>
+        <span className="cursor-pointer text-2xl text-white-200">
+          {isMenuOpen ? "X" : "☰"}
+        </span>
       </div>
     </div>
   );

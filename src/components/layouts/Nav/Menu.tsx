@@ -1,5 +1,10 @@
 import { AnimLinkButton } from "@/components/elements/Button";
 
+/* TODO: [priority: high] Implement animation of items.
+ * 1. Horizontal scrolling item
+ * 2. Hover: stop
+ */
+
 type Props = {
   menuRef: React.RefObject<HTMLUListElement>;
 };
@@ -7,7 +12,7 @@ type Props = {
 export const Menu: React.FC<Props> = ({ menuRef }) => {
   return (
     <ul
-      className="absolute left-0 top-full z-0 h-0 w-full bg-black-400 opacity-0"
+      className="absolute top-full z-0 flex h-0 w-screen flex-col items-center justify-center bg-black-100 opacity-0"
       ref={menuRef}
     >
       <li>
@@ -23,7 +28,7 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
           </div>
         </AnimLinkButton>
       </li>
-      <hr />
+      <hr className="w-[250px] text-yellow-100 md:w-[640px]" />
       <li>
         <AnimLinkButton
           href="/about"
@@ -37,7 +42,7 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
           </div>
         </AnimLinkButton>
       </li>
-      <hr />
+      <hr className="w-[250px] text-yellow-100 md:w-[640px]" />
       <li>
         <AnimLinkButton
           href="/blog/list"
@@ -51,7 +56,7 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
           </div>
         </AnimLinkButton>
       </li>
-      <hr />
+      <hr className="w-[250px] text-yellow-100 md:w-[640px]" />
       <li>
         <AnimLinkButton
           href="/archives"
