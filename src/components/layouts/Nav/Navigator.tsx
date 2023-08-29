@@ -5,14 +5,38 @@ import { Menu } from "./Menu";
 
 export const Navigator: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const handleMenuOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleMenuClose = () => {
+    setIsOpen(false);
+  };
+
+  const toggleMenu = () => {
+    if (isOpen) {
+      handleMenuClose();
+      if (tl.current) {
+        tl.current.timeScale(3);
+        tl.current.reverse();
+      }
+    } else {
+      handleMenuOpen();
+      if (tl.current) {
+        tl.current.play().timeScale(1);
+      }
+    }
+  };
+
   const menuRef = useRef<HTMLDivElement | null>(null);
-  const navLinksRef = useRef<HTMLElement[] | null>(null);
+  const navLinkRef = useRef<HTMLUListElement | null>(null);
   const tl = useRef<gsap.core.Timeline | null>(null);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      tl.current = gsap.timeline({ paused: true });
+    tl.current = gsap.timeline({ paused: true });
 
+    if (menuRef.current && navLinkRef.current) {
       tl.current
         .fromTo(
           menuRef.current,
@@ -23,11 +47,11 @@ export const Navigator: React.FC = () => {
             autoAlpha: 1,
             duration: 1,
             top: 0,
-            ease: "power2.inout",
+            ease: "power2.inOut",
           }
         )
         .fromTo(
-          navLinksRef.current,
+          navLinkRef.current.querySelectorAll(".nav-link"),
           {
             autoAlpha: 0,
             y: 30,
@@ -41,20 +65,9 @@ export const Navigator: React.FC = () => {
     }
   }, []);
 
-  const handleOpenMenu = () => {
-    setIsOpen(true);
-    tl.current?.play().timeScale(1);
-  };
-
-  const handleCloseMenu = () => {
-    setIsOpen(false);
-    tl.current?.timeScale(3);
-    tl.current?.reverse();
-  };
-
   return (
     <>
-      {!isOpen ? <Header onClick={handleOpenMenu} /> : null}
+      {!isOpen ? <Header toggleMenu={toggleMenu} /> : null}
       {/* Show this when screen size is reduced to sm */}
       <div
         className="visible fixed bottom-4 z-10 flex w-fit items-center justify-center
@@ -64,7 +77,13 @@ export const Navigator: React.FC = () => {
         <span className="text-sm">©</span>
         2023 YUSUKE SEKI
       </div>
-      {isOpen ? <Menu onClick={handleCloseMenu} /> : null}
+      {isOpen ? (
+        <Menu
+          toggleMenu={toggleMenu}
+          menuRef={menuRef}
+          navLinkRef={navLinkRef}
+        />
+      ) : null}
     </>
   );
 };

@@ -1,21 +1,23 @@
 import { AnimLinkButton } from "@/components/elements/Button";
 
 type Props = {
-  onClick: React.MouseEventHandler<HTMLButtonElement>;
+  toggleMenu: () => void;
+  menuRef: React.RefObject<HTMLDivElement>;
+  navLinkRef: React.RefObject<HTMLUListElement>;
 };
 
-export const Menu: React.FC<Props> = ({ onClick }) => {
+export const Menu: React.FC<Props> = ({ toggleMenu, menuRef, navLinkRef }) => {
   return (
-    <div id="menu" className="min-h-screen bg-black-200 text-yellow-100">
+    <div ref={menuRef} className="min-h-screen bg-black-200 text-yellow-100">
       <button
         type="button"
         className="absolute right-10 top-7 cursor-pointer text-2xl sm:right-16"
-        onClick={onClick}
+        onClick={toggleMenu}
       >
         ×
       </button>
       <div className="mx-auto flex h-full max-w-5xl items-center justify-center pt-16 text-5xl">
-        <ul id="nav-link" className="space-y-4">
+        <ul ref={navLinkRef} className="space-y-4">
           <li>
             <AnimLinkButton
               href="/"
