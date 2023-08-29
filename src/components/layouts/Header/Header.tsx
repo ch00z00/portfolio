@@ -1,29 +1,24 @@
 import { RectAnimButton } from "@/components/elements/Button";
 
-type Props = {
-  toggleMenu: () => void;
+type HeaderProps = {
+  hamRef: React.RefObject<HTMLDivElement>;
 };
 
-export const Header: React.FC<Props> = ({ toggleMenu }) => {
+export const Header: React.FC<HeaderProps> = ({ hamRef }) => {
   return (
-    <header className="fixed top-8 z-10 flex w-screen items-center justify-between px-10 shadow-md sm:px-16">
+    <div className="flex h-full w-screen items-center justify-between">
       <RectAnimButton text="HOME" href="/" />
-      {/* Hide this when screen size is reduced to sm */}
       <div
-        className="invisible flex w-fit items-center justify-center
-                      rounded-full border px-2 text-xs
+        className="invisible flex w-fit items-center
+                      justify-center rounded-full border px-2 text-xs
                       tracking-wide text-yellow-100 sm:visible"
       >
         <span className="text-sm">©</span>
         2023 YUSUKE SEKI
       </div>
-      <button
-        type="button"
-        className="font-orbitron text-xs text-white-100 sm:text-sm"
-        onClick={toggleMenu}
-      >
-        MENU
-      </button>
-    </header>
+      <div className="ham" ref={hamRef}>
+        <span className="cursor-pointer text-2xl text-white-100">☰</span>
+      </div>
+    </div>
   );
 };
