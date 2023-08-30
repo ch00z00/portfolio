@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { twMerge } from "tailwind-merge";
 import SplitType from "split-type";
@@ -6,43 +6,54 @@ import SplitType from "split-type";
 type Props = {
   text: string;
   className?: string;
+  onComplete?: () => void;
 };
 
-export const RevealText: React.FC<Props> = ({ text, className }) => {
+export const RevealText: React.FC<Props> = ({
+  text,
+  className,
+  onComplete,
+}) => {
+  const textRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      revealAnim();
+    if (textRef.current) {
+      const stagger = 0.2;
+      if (textRef.current) {
+        const split = SplitType.create(textRef.current, { types: "lines" });
+        gsap
+          .timeline({
+            onComplete: () => {
+              if (onComplete) {
+                onComplete();
+              }
+            },
+          })
+          .fromTo(
+            split.lines,
+            {
+              yPercent: 100,
+              stagger,
+            },
+            {
+              ease: "power4.out",
+              yPercent: 0,
+              duration: 1.7,
+            }
+          );
+      }
     }
   }, []);
 
-  const revealAnim = () => {
-    const stagger = 0.2;
-    const split = SplitType.create("#text", { types: "lines" });
-    gsap.timeline().fromTo(
-      split.lines,
-      {
-        yPercent: 100,
-        stagger,
-      },
-      {
-        ease: "power4.out",
-        yPercent: 0,
-        duration: 1.7,
-      }
-    );
-  };
-
   return (
-    <>
-      <div
-        id="text"
-        className={twMerge(
-          "overflow-hidden font-neuropol text-5xl tracking-widest text-white-200 md:text-8xl lg:text-9xl",
-          className
-        )}
-      >
-        {text}
-      </div>
-    </>
+    <div
+      ref={textRef}
+      className={twMerge(
+        "overflow-hidden font-neuropol text-5xl tracking-widest text-white-200 md:text-8xl lg:text-9xl",
+        className
+      )}
+    >
+      {text}
+    </div>
   );
 };

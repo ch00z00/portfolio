@@ -15,35 +15,32 @@ export const RectAnimButton: React.FC<RectAnimButtonProps> = ({
 }) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setAnimation();
+      const stagger = 0.05;
+
+      gsap.fromTo(
+        "#nav_btn #cover_rect",
+        {
+          x: "-100%",
+        },
+        {
+          x: "100%",
+          duration: 1.2,
+          ease: "power3.inout",
+          stagger,
+        }
+      );
+      gsap.fromTo(
+        "#nav_btn #nav_label",
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 0.5,
+          delay: 0.5,
+          stagger,
+        }
+      );
     }
   }, []);
-
-  const setAnimation = () => {
-    const stagger = 0.05;
-    gsap.fromTo(
-      "#nav_btn #cover_rect",
-      {
-        x: "-100%",
-      },
-      {
-        x: "100%",
-        duration: 1.2,
-        ease: "power3.inout",
-        stagger,
-      }
-    );
-    gsap.fromTo(
-      "#nav_btn #nav_label",
-      { opacity: 0 },
-      {
-        opacity: 1,
-        duration: 0.5,
-        delay: 0.5,
-        stagger,
-      }
-    );
-  };
 
   return (
     <div id="nav_btn" className="relative inline-block overflow-hidden">

@@ -7,42 +7,40 @@ export const Favorite: React.FC = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       gsap.registerPlugin(ScrollTrigger);
-      favGSAPAnim();
+
+      const stagger = 0.05;
+
+      const tl = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#fav_section",
+            start: "top 70%",
+            toggleActions: "play none none reset",
+          },
+        })
+        .fromTo(
+          "#slideY_fav p",
+          { opacity: 0, y: 35 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 2,
+            stagger,
+          }
+        )
+        .fromTo(
+          "#slideX_fav p",
+          { alpha: 0, x: -35 },
+          {
+            alpha: 1,
+            x: 0,
+            duration: 2,
+            stagger,
+          },
+          "<0.4"
+        );
     }
   }, []);
-
-  const favGSAPAnim = () => {
-    const stagger = 0.05;
-    const tl = gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: "#fav_section",
-          start: "top 70%",
-          toggleActions: "play none none reset",
-        },
-      })
-      .fromTo(
-        "#slideY_fav p",
-        { opacity: 0, y: 35 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 2,
-          stagger,
-        }
-      )
-      .fromTo(
-        "#slideX_fav p",
-        { alpha: 0, x: -35 },
-        {
-          alpha: 1,
-          x: 0,
-          duration: 2,
-          stagger,
-        },
-        "<0.4"
-      );
-  };
 
   return (
     <section
