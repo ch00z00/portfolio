@@ -21,9 +21,7 @@ export const Navigator: React.FC = () => {
       opacity: 1,
       height: "100vh",
       ease: "power4.inout",
-    });
-
-    tl.from(
+    }).from(
       links,
       {
         duration: 0.5,

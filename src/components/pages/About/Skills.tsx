@@ -6,40 +6,38 @@ export const Skills: React.FC = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       gsap.registerPlugin(ScrollTrigger);
-      skGSAPAnim();
+
+      const stagger = 0.05;
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#sk_section",
+          start: "top 80%",
+          toggleActions: "play none none reset",
+        },
+      });
+      tl.fromTo(
+        "#slideY_sk p",
+        { opacity: 0, y: 35 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          stagger,
+        }
+      ).fromTo(
+        "#slideX_sk div",
+        { alpha: 0, x: -30 },
+        {
+          alpha: 1,
+          x: 0,
+          duration: 2,
+          stagger,
+        },
+        "<0.4"
+      );
     }
   }, []);
-
-  const skGSAPAnim = () => {
-    const stagger = 0.05;
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#sk_section",
-        start: "top 80%",
-        toggleActions: "play none none reset",
-      },
-    });
-    tl.fromTo(
-      "#slideY_sk p",
-      { opacity: 0, y: 35 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 2,
-        stagger,
-      }
-    ).fromTo(
-      "#slideX_sk div",
-      { alpha: 0, x: -30 },
-      {
-        alpha: 1,
-        x: 0,
-        duration: 2,
-        stagger,
-      },
-      "<0.4"
-    );
-  };
 
   return (
     <section
