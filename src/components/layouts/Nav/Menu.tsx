@@ -12,7 +12,7 @@ type Props = {
 export const Menu: React.FC<Props> = ({ menuRef }) => {
   return (
     <ul
-      className="absolute top-full z-0 flex h-0 w-screen flex-col items-center justify-center bg-black-100 opacity-0"
+      className="absolute -left-1 top-full z-0 flex h-0 w-screen flex-col items-center justify-center bg-black-100 opacity-0 md:left-0"
       ref={menuRef}
     >
       <li>
