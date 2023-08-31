@@ -7,12 +7,12 @@ type HeaderProps = {
 
 export const Header: React.FC<HeaderProps> = ({ hamRef, isMenuOpen }) => {
   return (
-    <div className="flex h-full w-screen items-center justify-between">
+    <div className="flex h-full w-screen items-center justify-between px-10 sm:px-16">
       <RectAnimButton text="HOME" href="/" />
       <div
         className="invisible flex w-fit items-center
-                      justify-center rounded-full border px-2 text-xs
-                      tracking-wide text-yellow-100 sm:visible"
+                  justify-center rounded-full border px-4 text-xs
+                  tracking-wide text-yellow-100 sm:visible"
       >
         <span className="text-sm">©</span>
         2023 YUSUKE SEKI

@@ -1,8 +1,8 @@
 import { AnimLinkButton } from "@/components/elements/Button";
 
 /* TODO: [priority: high] Implement animation of items.
- * 1. Horizontal scrolling item
- * 2. Hover: stop
+ * 1. Static when it isn't hovered
+ * 2. Horizontal scrolling item when hovered
  */
 
 type Props = {
@@ -13,7 +13,7 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
   return (
     <div
       ref={menuRef}
-      className="absolute top-full z-50 h-0 w-screen bg-red-100/95 opacity-0"
+      className="absolute top-full h-0 w-screen bg-red-100/95 opacity-0"
     >
       <ul className="flex flex-col items-center justify-center pt-20">
         <li>
