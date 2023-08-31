@@ -21,8 +21,8 @@ export const HomePage: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex h-fit w-screen flex-col items-center bg-red-100 py-40">
-      <div className="top-80 flex w-screen flex-col">
+    <div className="flex h-fit w-screen flex-col items-center space-y-40 bg-red-100 py-40">
+      <div className="top-80 flex w-screen flex-col leading-none">
         {HOME_HERO_ITEMS.map((data, index) => (
           <RevealText
             key={index}

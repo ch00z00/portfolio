@@ -10,7 +10,7 @@ export const DESCRIPTION = {
 
 export const HOME_HERO_ITEMS = [
   {
-    text: "Welcom🕺 here!",
+    text: "Welcom here!",
     className: "pl-20 font-march-evoked",
   },
   {
@@ -19,10 +19,6 @@ export const HOME_HERO_ITEMS = [
   },
   {
     text: "Sociopath🙃 w/ sociability🙂",
-    className: "pl-20 font-march-evoked",
-  },
-  {
-    text: "Oh☝️ and minimalist🗑️ and optimists😗",
     className: "pl-20 font-march-evoked",
   },
 ];
