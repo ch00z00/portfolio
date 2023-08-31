@@ -18,16 +18,16 @@ export const HomeHero: React.FC = () => {
     setIsClient(true);
   }, []);
   return (
-    <div className="relative flex h-screen w-screen flex-col items-center bg-black-200 py-32">
+    <div className="relative flex h-screen w-screen flex-col items-center bg-black-200 pt-32">
       {isClient ? (
-        <div className="absolute flex justify-center">
+        <div className="absolute flex items-center justify-center">
           <MediaQuery maxWidth={639}>
             <Image
               src="/assets/pic_of_me.jpeg"
               width={300}
               height={300}
               alt="picture of me"
-              className="rounded-xl blur-sm duration-300 ease-in-out hover:blur-none"
+              className="rounded-xl blur-sm duration-700 ease-in-out hover:blur-none"
             />
           </MediaQuery>
           <MediaQuery minWidth={640}>
@@ -36,7 +36,7 @@ export const HomeHero: React.FC = () => {
               width={500}
               height={500}
               alt="picture of me"
-              className="rounded-xl blur-md duration-500 ease-in-out hover:blur-none"
+              className="rounded-xl blur-sm duration-700 ease-in-out hover:blur-none"
             />
           </MediaQuery>
         </div>

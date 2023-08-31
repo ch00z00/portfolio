@@ -48,7 +48,7 @@ export const Navigator: React.FC = () => {
   }, []);
 
   return (
-    <nav className="fixed top-8 z-10 flex w-screen items-center justify-between px-10 sm:px-16">
+    <nav className="fixed top-0 z-10 flex w-screen items-center justify-between bg-black-200/70 px-10 py-4 backdrop-blur sm:px-16">
       <Header hamRef={hamRef} isMenuOpen={isMenuOpen} />
       <Menu menuRef={menuRef} />
     </nav>
