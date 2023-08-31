@@ -51,10 +51,10 @@ export const RectAnimButton: React.FC<RectAnimButtonProps> = ({
       <span id="nav_label">
         <LinkButton
           blank={false}
-          className="before:absolute before:bottom-0 before:left-0 before:block
-                    before:h-[1px] before:w-full before:origin-top-left before:scale-x-0
-                    before:bg-white-200 before:transition before:duration-1000
-                    before:ease-in-out before:content-[''] before:hover:scale-x-100"
+          className="text-base before:absolute before:bottom-0 before:left-0 before:block before:h-[1px]
+                    before:w-full before:origin-top-left before:scale-x-0 before:bg-white-200
+                    before:transition before:duration-1000 before:ease-in-out
+                    before:content-[''] before:hover:scale-x-100 sm:text-lg"
           text={text}
           href={href}
           onClick={onClick}

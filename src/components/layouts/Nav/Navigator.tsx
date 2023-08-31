@@ -50,7 +50,7 @@ export const Navigator: React.FC = () => {
   return (
     <nav
       className="fixed top-0 z-50 flex w-screen items-center justify-between
-                bg-black-200/70 py-4 backdrop-blur"
+                bg-black-100/70 py-6 backdrop-blur"
     >
       <Header hamRef={hamRef} isMenuOpen={isMenuOpen} />
       <Menu menuRef={menuRef} />
