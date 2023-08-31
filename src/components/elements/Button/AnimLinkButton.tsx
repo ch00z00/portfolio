@@ -22,7 +22,7 @@ export const AnimLinkButton: React.FC<AnimLinkButtonProps> = ({
       <button
         type="button"
         className="group inline-flex items-center
-                  overflow-hidden py-4 duration-200
+                  overflow-hidden duration-200
                   hover:rounded-md hover:bg-white-100/20"
       >
         <BaseLink
@@ -30,7 +30,7 @@ export const AnimLinkButton: React.FC<AnimLinkButtonProps> = ({
           blank={blank}
           href={href}
           className={twMerge(
-            "font-orbitron text-sm tracking-wider text-white-200 duration-200 group-hover:px-4 sm:text-2xl",
+            "font-orbitron text-[min(13vw,100px)] tracking-wider text-white-200 duration-200 group-hover:px-4",
             className
           )}
         >

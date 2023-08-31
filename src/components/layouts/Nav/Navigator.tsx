@@ -5,7 +5,7 @@ import { Menu } from "./Menu";
 
 export const Navigator: React.FC = () => {
   const hamRef = useRef<HTMLDivElement>(null);
-  const menuRef = useRef<HTMLUListElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
   const linksRef = useRef<NodeListOf<HTMLLIElement>>(null);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
