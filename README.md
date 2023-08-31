@@ -1,6 +1,6 @@
 # Portfolio website 🦄
 
-Hi there👋  My name is choozoo.
+Hi there👋  My name is Yusuke Seki.
 
 This is my portfolio website. This portfolio website contains a variety of information about me, so please check it out!
 
@@ -8,7 +8,7 @@ I worked as a front-end engineer for about 2 years as a long-term internship in 
 
 ---
 
-こんにちは 👋  私は choozoo といいます。
+こんにちは 👋  私は関雄介といいます。
 
 こちらは私のポートフォリオサイトです。サイト内では、私に関する様々な情報を掲載しているので、ぜひ少し覗いてみてください！
 
@@ -16,4 +16,4 @@ I worked as a front-end engineer for about 2 years as a long-term internship in 
 
 ## Techs & tools used on this website
 
-Next.js / TypeScript / TailwindCSS / GSAP / Three.js / WebGL
+Next.js / TypeScript / GSAP / react-scroll-parallax / TailwindCSS
