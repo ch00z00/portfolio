@@ -30,7 +30,7 @@ export const AnimLinkButton: React.FC<AnimLinkButtonProps> = ({
           blank={blank}
           href={href}
           className={twMerge(
-            "font-orbitron  text-[min(13vw,100px)] tracking-wider text-white-200 duration-200 group-hover:px-4",
+            "font-orbitron text-[min(13vw,100px)] tracking-wider text-white-200 duration-200 group-hover:px-4",
             className
           )}
         >

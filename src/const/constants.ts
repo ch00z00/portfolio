@@ -10,16 +10,12 @@ export const DESCRIPTION = {
 
 export const HOME_HERO_ITEMS = [
   {
-    text: "Welcom here!",
-    className: "pl-20 font-march-evoked",
+    text: "Welcome to my portfolio site",
+    className: "font-march-evoked text-[min(4vw,40px)]",
   },
   {
-    text: "Hi👋 I'm Yusuke🐧",
-    className: "pl-20 font-march-evoked",
-  },
-  {
-    text: "Sociopath🙃 w/ sociability🙂",
-    className: "pl-20 font-march-evoked",
+    text: "Yusuke Seki",
+    className: "font-march-evoked text-yellow-100 text-[min(13vw,300px)]",
   },
 ];
 
