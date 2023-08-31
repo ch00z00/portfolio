@@ -2,29 +2,11 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import MediaQuery from "react-responsive";
 import { RevealText } from "@/components/elements/Text";
+import { HOME_HERO_ITEMS } from "@/const";
 
 // TODO: Maybe there's a better way to implement this.
 
 export const HomePage: React.FC = () => {
-  const HOME_HERO_ITEMS = [
-    {
-      text: "Welcom🕺 here!",
-      className: "pl-20 font-march-evoked",
-    },
-    {
-      text: "Hi👋 I'm Yusuke🐧",
-      className: "pl-20 font-march-evoked",
-    },
-    {
-      text: "Sociopath🙃 w/ sociabilityh🙂",
-      className: "pl-20 font-march-evoked",
-    },
-    {
-      text: "Oh☝️ and minimalist🗑️ and optimists😗",
-      className: "pl-20 font-march-evoked",
-    },
-  ];
-
   const [isClient, setIsClient] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 

@@ -8,9 +8,22 @@ export const DESCRIPTION = {
   arch: "I plan to post some of my past work here, etc., but I'm still working on it.",
 };
 
-export const hovNavItems = [
+export const HOME_HERO_ITEMS = [
   {
-    name: "home",
+    text: "Welcom🕺 here!",
+    className: "pl-20 font-march-evoked",
+  },
+  {
+    text: "Hi👋 I'm Yusuke🐧",
+    className: "pl-20 font-march-evoked",
+  },
+  {
+    text: "Sociopath🙃 w/ sociability🙂",
+    className: "pl-20 font-march-evoked",
+  },
+  {
+    text: "Oh☝️ and minimalist🗑️ and optimists😗",
+    className: "pl-20 font-march-evoked",
   },
 ];
 
