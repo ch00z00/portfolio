@@ -15,8 +15,8 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
       ref={menuRef}
       className="absolute top-full h-0 w-screen bg-red-100/95 opacity-0"
     >
-      <ul className="flex flex-col items-center justify-center pt-20">
-        <li>
+      <div className="flex flex-col items-center justify-center pt-20">
+        <div>
           <AnimLinkButton
             href="/"
             className="w-[250px] font-march-evoked tracking-widest group-hover:px-8 md:w-[640px]"
@@ -28,9 +28,9 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
               </div>
             </div>
           </AnimLinkButton>
-        </li>
+        </div>
         <hr className="w-[250px] text-yellow-100 md:w-[640px]" />
-        <li>
+        <div>
           <AnimLinkButton
             href="/about"
             className="w-[250px] font-march-evoked tracking-widest group-hover:px-8 md:w-[640px]"
@@ -42,9 +42,9 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
               </div>
             </div>
           </AnimLinkButton>
-        </li>
+        </div>
         <hr className="w-[250px] text-yellow-100 md:w-[640px]" />
-        <li>
+        <div>
           <AnimLinkButton
             href="/blog/list"
             className="w-[250px] font-march-evoked tracking-widest group-hover:px-8 md:w-[640px]"
@@ -56,9 +56,9 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
               </div>
             </div>
           </AnimLinkButton>
-        </li>
+        </div>
         <hr className="w-[250px] text-yellow-100 md:w-[640px]" />
-        <li>
+        <div>
           <AnimLinkButton
             href="/archives"
             className="w-[250px] font-march-evoked tracking-widest group-hover:px-8 md:w-[640px]"
@@ -70,8 +70,8 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
               </div>
             </div>
           </AnimLinkButton>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 };
