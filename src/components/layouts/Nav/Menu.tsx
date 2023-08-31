@@ -13,7 +13,7 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
   return (
     <div
       ref={menuRef}
-      className="absolute top-full z-50 h-0 w-screen bg-black-100 opacity-0"
+      className="absolute top-full z-50 h-0 w-screen bg-red-100/95 opacity-0"
     >
       <ul className="flex flex-col items-center justify-center pt-20">
         <li>

@@ -11,11 +11,12 @@ export const DESCRIPTION = {
 export const HOME_HERO_ITEMS = [
   {
     text: "Welcome to my portfolio site",
-    className: "font-march-evoked text-[min(4vw,40px)]",
+    className: "font-march-evoked tracking-widest text-[min(4vw,40px)]",
   },
   {
     text: "Yusuke Seki",
-    className: "font-march-evoked text-yellow-100 text-[min(13vw,300px)]",
+    className:
+      "font-march-evoked text-yellow-100 tracking-wider text-[min(13vw,300px)]",
   },
 ];
 
