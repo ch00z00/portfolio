@@ -12,7 +12,7 @@ export const HomeHero: React.FC = () => {
     setIsClient(true);
   }, []);
   return (
-    <div className="relative flex h-[min(110vh)] w-screen flex-col items-center bg-black-100 py-24">
+    <div className="relative flex h-fit w-screen flex-col items-center bg-black-100 py-24">
       {isClient ? (
         <>
           <div className="absolute flex items-center justify-center">
@@ -35,8 +35,7 @@ export const HomeHero: React.FC = () => {
               />
             </MediaQuery>
           </div>
-
-          <div className="mx-auto flex w-full flex-col pt-52 text-center leading-none lg:pt-48 xl:pt-36">
+          <div className="flex w-full flex-col pt-52 text-center leading-none lg:pt-48 xl:pt-36">
             <MediaQuery maxWidth={767}>
               <Parallax speed={25} className="z-10">
                 <RevealText
@@ -59,6 +58,12 @@ export const HomeHero: React.FC = () => {
                 className="-top-8 font-march-evoked text-[min(13vw,300px)] tracking-wider text-yellow-100"
               />
             </Parallax>
+          </div>
+
+          <div className="z-10 mx-auto pt-[420px] text-center">
+            <div className="w-12 rounded-full border py-1 text-3xl text-yellow-100">
+              ↓
+            </div>
           </div>
         </>
       ) : (
