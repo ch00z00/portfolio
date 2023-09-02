@@ -1,6 +1,8 @@
 import { RevealText } from "@/components/elements/Text";
 import { HOME_01_SENT_EN } from "@/const";
 
+// TODO: Implement Text Distortion Effects.
+
 export const Home01: React.FC = () => {
   return (
     <div className="relative grid h-fit w-screen grid-cols-2 bg-black-100 px-[min(12vw)] py-24">

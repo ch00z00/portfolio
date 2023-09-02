@@ -12,7 +12,7 @@ export const HomeHero: React.FC = () => {
     setIsClient(true);
   }, []);
   return (
-    <div className="relative flex h-fit w-screen flex-col items-center bg-black-100 py-24">
+    <div className="relative flex h-fit w-screen flex-col items-center bg-black-100 py-36">
       {isClient ? (
         <>
           <div className="absolute flex items-center justify-center">
