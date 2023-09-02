@@ -1,12 +1,12 @@
 import { RevealText } from "@/components/elements/Text";
 import { HOME_01_SENT_EN } from "@/const";
 
-export const Home01: React.FC = () => {
+export const Home03: React.FC = () => {
   return (
     <div className="relative grid h-fit w-screen grid-cols-2 bg-black-100 px-[min(12vw)] py-24">
       <div>
         <div className="font-march-evoked text-[min(2vw,20px)] tracking-widest text-yellow-100">
-          01.
+          03.
         </div>
         <RevealText
           text="The End, So Far"

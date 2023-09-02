@@ -32,20 +32,6 @@ export const Menu: React.FC<Props> = ({ menuRef }) => {
         <hr className="w-[250px] text-yellow-100 md:w-[640px]" />
         <div>
           <AnimLinkButton
-            href="/about"
-            className="w-[250px] font-march-evoked tracking-widest group-hover:px-8 md:w-[640px]"
-          >
-            <div className="flex items-center justify-between text-yellow-100">
-              <div>ABOUT</div>
-              <div className="-rotate-45 rounded-full text-yellow-100 duration-300 group-hover:rotate-0">
-                →
-              </div>
-            </div>
-          </AnimLinkButton>
-        </div>
-        <hr className="w-[250px] text-yellow-100 md:w-[640px]" />
-        <div>
-          <AnimLinkButton
             href="/blog/list"
             className="w-[250px] font-march-evoked tracking-widest group-hover:px-8 md:w-[640px]"
           >
