@@ -14,6 +14,6 @@ export const HOME_01_SENT_JP =
   "私は大学2年生頃からITを学び始め、同年から2年ほど日本国内のITベンチャー企業で長期インターン生のフロントエンドエンジニアとして働きました。しかし、そこで働く中で、業界における自身の市場価値について考えるきっかけがありました。そこで一度某企業を離れ、エンジニアとしての存在価値を考えました。その最中に利倉健太さんのポートフォリオサイトに出会い、3D表現や巧みなデザインを駆使した洗練されたウェブサイトのデザイン・開発に惹かれ始めました。それと同時に、自分の市場価値を見出すヒントを得ました。それから私は海外のサイトのような優れたウェブサイトを生み出せるエンジニアになりたいと思うようになりました。";
 
 export const HOME_04_SENT_EN =
-  "I'm basically an optimistic and sociable individual with a touch of a sociopath personality trait. Additionally, I'm minimalist.";
+  "I'm basically an optimistic and sociable individual with a touch of a sociopath personality trait. Additionally, I'm minimalist, so I don't have much of an appetite for things.";
 export const HOME_04_SENT_JP =
-  "わたしは基本的に楽観主義者で社会性のあるソシオパス気質の人です。また、ミニマリストでもあります。";
+  "わたしは基本的に楽観主義者で社会性のあるソシオパス気質の人間です。また、ミニマリストでもあるため、あまり物欲がありません。";

@@ -8,10 +8,12 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <HomeHero />
-      <Home01 />
-      <Home02 />
-      <Home03 />
-      <Home04 />
+      <div className="space-y-48 pb-48 pt-24">
+        <Home01 />
+        <Home02 />
+        <Home03 />
+        <Home04 />
+      </div>
     </>
   );
 };
