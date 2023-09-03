@@ -6,13 +6,11 @@ import { Menu } from "./Menu";
 export const Navigator: React.FC = () => {
   const hamRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
-  const linksRef = useRef<NodeListOf<HTMLLIElement>>(null);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const ham = hamRef.current;
     const menu = menuRef.current;
-    const links = linksRef.current;
 
     const tl = gsap.timeline({ paused: true });
 
@@ -21,17 +19,7 @@ export const Navigator: React.FC = () => {
       opacity: 1,
       height: "100vh",
       ease: "power4.inout",
-    }).from(
-      links,
-      {
-        duration: 0.5,
-        opacity: 0,
-        y: 20,
-        stagger: 0.1,
-        ease: "power4.inout",
-      },
-      "<"
-    );
+    });
 
     tl.reverse();
 
@@ -53,7 +41,7 @@ export const Navigator: React.FC = () => {
                 bg-black-100/70 py-6 backdrop-blur"
     >
       <Header hamRef={hamRef} isMenuOpen={isMenuOpen} />
-      <Menu menuRef={menuRef} />
+      <Menu menuRef={menuRef} isMenuOpen={isMenuOpen} />
     </nav>
   );
 };
