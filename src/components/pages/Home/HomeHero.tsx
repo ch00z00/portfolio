@@ -35,7 +35,7 @@ export const HomeHero: React.FC = () => {
               />
             </MediaQuery>
           </div>
-          <div className="flex w-full flex-col pt-52 text-center leading-none lg:pt-48 xl:pt-36">
+          <div className="flex w-full flex-col pt-52 text-center leading-none lg:pt-60 xl:pt-48">
             <MediaQuery maxWidth={767}>
               <Parallax speed={25} className="z-10">
                 <RevealText
