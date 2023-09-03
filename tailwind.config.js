@@ -15,6 +15,8 @@ module.exports = {
       },
       animation: {
         "fade-in-bottom": "fade-in-bottom 1.2s ease-out both",
+        marquee: "marquee 20s linear infinite",
+        marquee2: "marquee2 20s linear infinite",
       },
       keyframes: {
         "fade-in-bottom": {
@@ -26,6 +28,14 @@ module.exports = {
             transform: "translateY(0)",
             opacity: "1",
           },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
         },
       },
     },
