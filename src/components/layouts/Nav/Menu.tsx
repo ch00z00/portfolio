@@ -3,18 +3,18 @@ import { MarqueeLinkButton } from "@/components/elements/Button";
 
 type Props = {
   menuRef: React.RefObject<HTMLDivElement>;
-  isMenuOpen: boolean;
+  isMenuOpen?: boolean;
 };
 
 export const Menu: React.FC<Props> = ({ menuRef, isMenuOpen }) => {
   return (
     <div
       ref={menuRef}
-      className="absolute top-full h-0 w-screen bg-yellow-100/95 opacity-0"
+      className="absolute top-full h-0 w-screen bg-yellow-100 opacity-0"
     >
       <div
         className={clsx(
-          "flex flex-col items-center justify-center space-y-8 pt-20",
+          "flex flex-col items-center justify-center space-y-8 pt-[15vh]",
           isMenuOpen ? "visible" : "invisible duration-700"
         )}
       >
