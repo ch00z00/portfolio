@@ -20,20 +20,22 @@ export const MarqueeLinkButton: React.FC<Props> = ({
       href={href}
       blank={blank}
       className={twMerge(
-        "relative flex w-[min(70vw)] overflow-x-hidden bg-black-100 font-march-evoked text-9xl text-yellow-100",
+        "group relative flex w-[min(70vw)] overflow-x-hidden bg-black-100 font-march-evoked text-9xl text-yellow-100",
         className
       )}
     >
-      <div className="animate-marquee whitespace-nowrap py-4">
-        <span className="mx-8">{text}</span>
-        <span className="mx-8">{text}</span>
-        <span className="mx-8">{text}</span>
+      <div className="animate-marquee whitespace-nowrap py-5 duration-500 group-hover:bg-yellow-100 group-hover:text-black-100">
+        <span className="mx-8 group-hover:animate-pulse">{text}</span>
+        <span className="mx-8 group-hover:animate-pulse">{text}</span>
+        <span className="mx-8 group-hover:animate-pulse">{text}</span>
+        <span className="mx-8 group-hover:animate-pulse">{text}</span>
       </div>
 
-      <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-4">
-        <span className="mx-8">{text}</span>
-        <span className="mx-8">{text}</span>
-        <span className="mx-8">{text}</span>
+      <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-5 duration-500 group-hover:bg-yellow-100 group-hover:text-black-100">
+        <span className="mx-8 group-hover:animate-pulse">{text}</span>
+        <span className="mx-8 group-hover:animate-pulse">{text}</span>
+        <span className="mx-8 group-hover:animate-pulse">{text}</span>
+        <span className="mx-8 group-hover:animate-pulse">{text}</span>
       </div>
     </BaseLink>
   );
