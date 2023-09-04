@@ -60,7 +60,7 @@ export const HomeHero: React.FC = () => {
             </Parallax>
           </div>
 
-          <div className="z-10 mx-auto pt-[190px] text-center sm:pt-[500px] md:pt-[420px]">
+          <div className="z-10 mx-auto pt-[190px] text-center sm:pt-[500px] md:pt-[370px]">
             <div className="w-8 rounded-full border py-0 text-xl text-yellow-100 md:w-12 md:py-1 md:text-3xl">
               ↓
             </div>

@@ -45,16 +45,16 @@ export const ArticleList: React.FC<Props> = ({ blog }) => {
             <li id="article" key={blog.id} className="group">
               <AnimLinkButton
                 href={`/blog/${blog.id}`}
-                className="w-[300px] font-neuropol md:w-[700px]"
+                className="w-[min(80vw)] py-4 font-neuropol text-lg group-hover:px-0 md:group-hover:px-4 lg:w-[min(70vw)] xl:text-3xl"
               >
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col items-center justify-between space-y-2 md:flex-row">
                   <div>{blog.title}</div>
                   <div className="rounded-full bg-black-200 px-3 text-white-200">
                     →
                   </div>
                 </div>
               </AnimLinkButton>
-              <hr className="mx-auto w-full text-white-100/30 group-hover:invisible" />
+              <hr className="mx-auto w-[min(80vw)] text-white-100/30 group-hover:invisible lg:w-[min(70vw)]" />
             </li>
           ))}
         </ul>
