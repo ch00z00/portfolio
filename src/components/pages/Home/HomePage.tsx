@@ -8,7 +8,7 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <HomeHero />
-      <div className="space-y-48 pb-48 pt-24">
+      <div className="space-y-36 pb-48 pt-0 sm:space-y-48 sm:pt-24">
         <Home01 />
         <Home02 />
         <Home03 />

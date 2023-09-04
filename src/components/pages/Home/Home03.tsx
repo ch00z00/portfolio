@@ -1,4 +1,5 @@
 import { RevealText } from "@/components/elements/Text";
+import { HOME_03_SENT_EN } from "@/const";
 
 // TODO: Implement Text Distortion Effects.
 
@@ -15,33 +16,16 @@ export const Home03: React.FC = () => {
         />
       </div>
       <div className="space-y-8 pt-6 text-[min(3vw,18px)] tracking-widest text-white-200 xl:pt-10">
-        <div>
-          <div className="text-[min(4vw,24px)]">Watching Films</div>
-          <div className="text-yellow-100">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas,
-            earum. Vero perferendis at facere totam ut itaque architecto sit
-            culpa saepe, impedit iure ipsum aliquid accusantium, optio quas
-            necessitatibus molestiae.
-          </div>
-        </div>
-        <div>
-          <div className="text-[min(4vw,24px)]">Working out</div>
-          <div className="text-yellow-100">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas,
-            earum. Vero perferendis at facere totam ut itaque architecto sit
-            culpa saepe, impedit iure ipsum aliquid accusantium, optio quas
-            necessitatibus molestiae.
-          </div>
-        </div>
-        <div>
-          <div className="text-[min(4vw,24px)]">Making yogurt</div>
-          <div className="text-yellow-100">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas,
-            earum. Vero perferendis at facere totam ut itaque architecto sit
-            culpa saepe, impedit iure ipsum aliquid accusantium, optio quas
-            necessitatibus molestiae.
-          </div>
-        </div>
+        {HOME_03_SENT_EN.map((item) => (
+          <>
+            <div key={item.title}>
+              <div className="text-[min(4vw,24px)]">{item.title}</div>
+              <div className="whitespace-pre-line text-yellow-100">
+                {item.sent}
+              </div>
+            </div>
+          </>
+        ))}
       </div>
     </div>
   );
