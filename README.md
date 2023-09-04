@@ -1,4 +1,4 @@
-## OVERVIEW
+## Overview
 
 This is my portfolio site.
 You can check my history, skills, interests and personality stuff.
