@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { twMerge } from "tailwind-merge";
 import SplitType from "split-type";
 
@@ -17,12 +18,20 @@ export const RevealText: React.FC<Props> = ({
   const textRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const stagger = 0.5;
+
     if (textRef.current) {
-      const stagger = 0.2;
       if (textRef.current) {
         const split = SplitType.create(textRef.current, { types: "lines" });
         gsap
           .timeline({
+            scrollTrigger: {
+              trigger: textRef.current,
+              start: "top center-=5%",
+              toggleActions: "play none none reset",
+              markers: true,
+            },
             onComplete: () => {
               if (onComplete) {
                 onComplete();

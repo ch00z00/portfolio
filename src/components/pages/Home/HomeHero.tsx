@@ -12,10 +12,10 @@ export const HomeHero: React.FC = () => {
     setIsClient(true);
   }, []);
   return (
-    <div className="relative flex h-fit w-screen flex-col items-center bg-black-100 py-36">
+    <div className="relative flex h-fit w-screen flex-col items-center bg-black-100 pb-96 pt-36">
       {isClient ? (
         <>
-          <div className="absolute flex items-center justify-center">
+          <div className="absolute mb-40 flex items-center justify-center">
             <MediaQuery maxWidth={639}>
               <Image
                 src="/assets/pic_of_me.jpeg"
@@ -58,12 +58,6 @@ export const HomeHero: React.FC = () => {
                 className="-top-8 font-march-evoked text-[min(13vw,300px)] tracking-wider text-yellow-100"
               />
             </Parallax>
-          </div>
-
-          <div className="group z-10 mx-auto pt-[190px] text-center sm:pt-[500px] md:pt-[370px]">
-            <div className="w-8 rounded-full border py-0 text-xl text-yellow-100 duration-500 group-hover:border-yellow-100 group-hover:bg-yellow-100 group-hover:text-black-100 md:w-12 md:py-1 md:text-3xl">
-              ↓
-            </div>
           </div>
         </>
       ) : (
