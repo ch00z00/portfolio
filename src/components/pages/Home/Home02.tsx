@@ -1,4 +1,4 @@
-import { RevealText } from "@/components/elements/Text";
+import { STRevealText } from "@/components/elements/Text";
 
 // TODO: Implement Text Distortion Effects.
 
@@ -9,7 +9,7 @@ export const Home02: React.FC = () => {
         <div className="font-march-evoked text-[min(2vw,20px)] tracking-widest text-yellow-100">
           02.
         </div>
-        <RevealText
+        <STRevealText
           text="Skills"
           className="font-march-evoked text-[min(6vw,52px)] tracking-widest"
         />
