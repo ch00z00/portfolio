@@ -12,7 +12,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="m-0 overflow-x-hidden overflow-y-scroll bg-black-100">
+      <body className="m-0 overflow-x-hidden overflow-y-scroll scroll-smooth bg-black-100">
         <Main />
         <NextScript />
       </body>
