@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { twMerge } from "tailwind-merge";
 import SplitType from "split-type";
+import { twMerge } from "tailwind-merge";
 
 type Props = {
   text: string;
@@ -22,34 +22,35 @@ export const STRevealText: React.FC<Props> = ({
     const stagger = 0.5;
 
     if (textRef.current) {
-      if (textRef.current) {
-        const split = SplitType.create(textRef.current, { types: "lines" });
-        gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: textRef.current,
-              start: "top center-=5%",
-              toggleActions: "play none none reset",
-            },
-            onComplete: () => {
-              if (onComplete) {
-                onComplete();
-              }
-            },
-          })
-          .fromTo(
-            split.lines,
-            {
-              yPercent: 100,
-              stagger,
-            },
-            {
-              ease: "power4.out",
-              yPercent: 0,
-              duration: 1.7,
+      const split = SplitType.create(textRef.current, { types: "lines" });
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: textRef.current,
+            start: "top center-=5%",
+            toggleActions: "play none none reset",
+          },
+          onComplete: () => {
+            if (onComplete) {
+              onComplete();
             }
-          );
-      }
+          },
+        })
+        .fromTo(
+          split.lines,
+          {
+            yPercent: 100,
+            stagger,
+          },
+          {
+            ease: "power4.out",
+            yPercent: 0,
+            duration: 1.7,
+          }
+        );
+      return () => {
+        gsap.killTweensOf(textRef.current);
+      };
     }
   }, []);
 

@@ -20,29 +20,27 @@ export const RevealText: React.FC<Props> = ({
     const stagger = 0.5;
 
     if (textRef.current) {
-      if (textRef.current) {
-        const split = SplitType.create(textRef.current, { types: "lines" });
-        gsap
-          .timeline({
-            onComplete: () => {
-              if (onComplete) {
-                onComplete();
-              }
-            },
-          })
-          .fromTo(
-            split.lines,
-            {
-              yPercent: 100,
-              stagger,
-            },
-            {
-              ease: "power4.out",
-              yPercent: 0,
-              duration: 1.7,
+      const split = SplitType.create(textRef.current, { types: "lines" });
+      gsap
+        .timeline({
+          onComplete: () => {
+            if (onComplete) {
+              onComplete();
             }
-          );
-      }
+          },
+        })
+        .fromTo(
+          split.lines,
+          {
+            yPercent: 100,
+            stagger,
+          },
+          {
+            ease: "power4.out",
+            yPercent: 0,
+            duration: 1.7,
+          }
+        );
     }
   }, []);
 
