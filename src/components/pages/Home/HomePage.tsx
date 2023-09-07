@@ -4,6 +4,7 @@ import { Home01 } from "./Home01";
 import { Home02 } from "./Home02";
 import { Home03 } from "./Home03";
 import { Home04 } from "./Home04";
+import { Contact } from "./Contact";
 
 export const HomePage: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ export const HomePage: React.FC = () => {
         <Home02 />
         <Home03 />
         <Home04 />
+        <Contact />
       </div>
     </>
   );
