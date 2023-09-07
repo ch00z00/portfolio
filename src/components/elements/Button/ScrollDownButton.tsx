@@ -13,7 +13,7 @@ export const ScrollDownButton: React.FC = () => {
   const [percent, setPercent] = useState(0);
 
   const init = () => {
-    const radius = 20;
+    const radius = 24;
     const circumference = 2 * Math.PI * radius;
     setCircumference(circumference);
 
@@ -38,19 +38,16 @@ export const ScrollDownButton: React.FC = () => {
   }, []);
 
   return (
-    <div
-      className="flex items-center
-                justify-center rounded-full"
-    >
-      <svg className="z-10 h-20 w-20 -rotate-90">
+    <div className="flex items-center justify-center rounded-full">
+      <svg className="h-[6.25rem] w-20 -rotate-90">
         <circle
           className="text-white-300/40"
           strokeWidth="2"
           stroke="currentColor"
           fill="transparent"
-          r="20"
+          r="24"
           cx="40"
-          cy="90"
+          cy="50"
         />
         <circle
           className="text-yellow-100"
@@ -60,15 +57,15 @@ export const ScrollDownButton: React.FC = () => {
           strokeLinecap="round"
           stroke="currentColor"
           fill="transparent"
-          r="20"
+          r="24"
           cx="40"
-          cy="90"
+          cy="50"
         />
       </svg>
       <button
-        className="h-8 w-8 rounded-full border text-center text-xl
-                text-yellow-100 duration-300 hover:border-yellow-100
-                hover:bg-yellow-100 hover:text-black-100"
+        className="absolute h-8 w-8 rounded-full border-2 border-yellow-100
+                bg-yellow-100 text-center text-lg text-black-100
+                  duration-300 hover:h-11 hover:w-11 hover:text-2xl"
         onClick={handleScroll}
       >
         ↓
