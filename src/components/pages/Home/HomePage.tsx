@@ -10,7 +10,7 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <HomeHero />
-      <div className="fixed bottom-10 right-10 z-10 sm:right-16">
+      <div className="fixed bottom-10 right-4 z-10 sm:right-14">
         <ScrollButton />
       </div>
       <div className="space-y-36 pb-48 pt-0 sm:space-y-48 sm:pt-60">
