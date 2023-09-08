@@ -18,8 +18,8 @@ export const HomePage: React.FC = () => {
         <Home02 />
         <Home03 />
         <Home04 />
-        <Contact />
       </div>
+      <Contact />
     </>
   );
 };
