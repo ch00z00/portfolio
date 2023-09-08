@@ -12,7 +12,7 @@ export const Contact: React.FC = () => {
         text="Contact"
         className="font-march-evoked text-[min(9vw,128px)] tracking-wider text-black-200"
       />
-      <div className="flex flex-col items-center space-y-[min(2vh)] lg:flex-row lg:space-y-0">
+      <div className="flex flex-col items-center space-y-[min(2vh)] xl:flex-row xl:space-y-0">
         <RotateLinkButton
           blank={true}
           href={TWITTER_LINK}
