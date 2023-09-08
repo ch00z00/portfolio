@@ -1,5 +1,5 @@
 import { STRevealText } from "@/components/elements/Text";
-import { HOME_04_SENT_EN } from "@/const";
+import { HOME_04_SENT_EN, HOME_04_SENT_JP } from "@/const";
 
 // TODO: Implement Text Distortion Effects.
 
@@ -25,7 +25,7 @@ export const Home04: React.FC = () => {
         className="whitespace-pre-line pt-6 text-[min(3vw,18px)]
                   tracking-widest text-yellow-100 xl:pt-10"
       >
-        {HOME_04_SENT_EN}
+        {HOME_04_SENT_JP}
       </div>
     </div>
   );
