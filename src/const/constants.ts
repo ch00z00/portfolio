@@ -37,12 +37,27 @@ export const HOME_03_SENT_JP = [
     sent: "私は週7で大学ジムに通って筋トレをしています。\n 自分はもともと骨格的に鎖骨がそこまで長くないので肩幅が狭く、僧帽筋が発達していたため撫で肩で、体質的にいくら食べても全く太らずガリガリでした。はじめはそんな自分の体がダサくて嫌いだったので鍛え始めました。\n しかし、トレーニングを重ねるにつれてトレーニングそれ自体が楽しいことや、トレ後の達成感や多幸感で筋トレをしなければいけない体になってしまいました。",
   },
   {
+    title: "音楽好き",
+    sent: "起きている間は基本的にずっと音楽を聴いています。NO MUSIC, NO LIFEです🫡\n J-POPやK=POPなども聴きますが、ロックとHipHop、USラップが特に好きです。",
+  },
+  {
     title: "ヨーグルト作り",
     sent: "ある時、暇を持て余した私は「自家製ヨーグルトが作れる」という情報を知り、ヨーグルトを作り始めました。\n 当初は「ヨーグルトを牛乳で5~6倍の量に増殖できるって超コスパええやん」と思って作っていましたが、種となるヨーグルトを変えてみたり、温める際の温度を変えてみたり、発酵時間を変えてみたりというように自分史上最高のヨーグルトを作るための実験として嗜むようになりました。\n ちなみに現時点では、明治のR-1を種とし、500Wで2分レンチンし、12時間発酵させたヨーグルトがベストでした。",
   },
 ];
 
+// Revise the English version to match the Japanese text!
 export const HOME_04_SENT_EN =
   "I'm basically an optimistic and sociable individual with a touch of a sociopath personality trait. \n Additionally, I'm minimalist, so I don't have much of an appetite for things.";
-export const HOME_04_SENT_JP =
-  "わたしは基本的に楽観主義的で社会性のあるソシオパス気質の人間です。\n また、ミニマリストでもあるため、あまり物欲がありません。";
+export const HOME_04_SENT_JP = [
+  { title: "衣", sent: "黒っぽい服ばかり着てる　/　ノームコアコーデが多い" },
+  {
+    title: "食",
+    sent: "米食派　/　辛いもの好き　/　酸っぱいもの好き",
+  },
+  { title: "住", sent: "ミニマリスト　/　フッ軽な引きこもり　/　旅行好き" },
+  {
+    title: "性格",
+    sent: "楽観主義者　/　社会性はあるけど若干ソシオパス気味(実生活上は外部にその気を出すことはないのでご安心ください👐)",
+  },
+];
