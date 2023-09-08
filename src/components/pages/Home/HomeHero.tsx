@@ -4,7 +4,7 @@ import MediaQuery from "react-responsive";
 
 import { RevealText } from "@/components/elements/Text";
 import { Parallax } from "react-scroll-parallax";
-import { ExpCircle } from "@/components/elements/Expelimental";
+import { ExpCircle, ExpRect } from "@/components/elements/Expelimental";
 
 export const HomeHero: React.FC = () => {
   const [isClient, setIsClient] = useState(false);
@@ -70,13 +70,13 @@ export const HomeHero: React.FC = () => {
             <ExpCircle className="h-32 w-32" />
           </Parallax>
           <Parallax speed={30} className="flex w-full pl-[min(20vw)]">
-            <ExpCircle className="h-8 w-8" />
+            <ExpRect className="h-8 w-8" />
           </Parallax>
           <Parallax
             speed={60}
             className="-mb-80 flex w-full pl-[min(65vw)] pt-[min(10vw)]"
           >
-            <ExpCircle />
+            <ExpRect />
           </Parallax>
           <Parallax
             speed={20}
