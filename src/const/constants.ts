@@ -45,4 +45,4 @@ export const HOME_03_SENT_JP = [
 export const HOME_04_SENT_EN =
   "I'm basically an optimistic and sociable individual with a touch of a sociopath personality trait. \n Additionally, I'm minimalist, so I don't have much of an appetite for things.";
 export const HOME_04_SENT_JP =
-  "わたしは基本的に楽観主義者で社会性のあるソシオパス気質の人間です。\n また、ミニマリストでもあるため、あまり物欲がありません。";
+  "わたしは基本的に楽観主義的で社会性のあるソシオパス気質の人間です。\n また、ミニマリストでもあるため、あまり物欲がありません。";

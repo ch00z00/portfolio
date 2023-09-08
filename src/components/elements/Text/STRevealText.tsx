@@ -29,6 +29,7 @@ export const STRevealText: React.FC<Props> = ({
             trigger: textRef.current,
             start: "top center-=5%",
             toggleActions: "play none none reset",
+            once: true,
           },
           onComplete: () => {
             if (onComplete) {
