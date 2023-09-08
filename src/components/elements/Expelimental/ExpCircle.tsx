@@ -8,7 +8,7 @@ export const ExpCircle: React.FC<Props> = ({ className }) => {
   return (
     <div
       className={twMerge(
-        "h-20 w-20 rounded-full bg-yellow-100 blur-xl",
+        "h-20 w-20 rounded-full bg-yellow-100 blur-sm",
         className
       )}
     ></div>
