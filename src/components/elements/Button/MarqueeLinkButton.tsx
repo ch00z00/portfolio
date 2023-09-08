@@ -24,14 +24,14 @@ export const MarqueeLinkButton: React.FC<Props> = ({
         className
       )}
     >
-      <div className="animate-marquee whitespace-nowrap py-5 duration-500 group-hover:bg-yellow-100 group-hover:text-black-100">
+      <div className="animate-marquee whitespace-nowrap py-5 duration-500 group-hover:bg-orange-100 group-hover:text-black-100">
         <span className="mx-8 group-hover:animate-pulse">{text}</span>
         <span className="mx-8 group-hover:animate-pulse">{text}</span>
         <span className="mx-8 group-hover:animate-pulse">{text}</span>
         <span className="mx-8 group-hover:animate-pulse">{text}</span>
       </div>
 
-      <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-5 duration-500 group-hover:bg-yellow-100 group-hover:text-black-100">
+      <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-5 duration-500 group-hover:bg-orange-100 group-hover:text-black-100">
         <span className="mx-8 group-hover:animate-pulse">{text}</span>
         <span className="mx-8 group-hover:animate-pulse">{text}</span>
         <span className="mx-8 group-hover:animate-pulse">{text}</span>
