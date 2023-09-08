@@ -1,5 +1,5 @@
 import { HomeHero } from "./HomeHero";
-import { ScrollDownButton } from "@/components/elements/Button";
+import { ScrollButton } from "@/components/elements/Button";
 import { Home01 } from "./Home01";
 import { Home02 } from "./Home02";
 import { Home03 } from "./Home03";
@@ -11,7 +11,7 @@ export const HomePage: React.FC = () => {
     <>
       <HomeHero />
       <div className="fixed bottom-10 right-10 z-10 sm:right-16">
-        <ScrollDownButton />
+        <ScrollButton />
       </div>
       <div className="space-y-36 pb-48 pt-0 sm:space-y-48 sm:pt-60">
         <Home01 />

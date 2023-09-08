@@ -1,17 +1,27 @@
 import { useEffect, useState } from "react";
+import clsx from "clsx";
 
-export const ScrollDownButton: React.FC = () => {
-  const handleScroll = () => {
-    window.scroll({
-      top: document.body.offsetHeight,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
+export const ScrollButton: React.FC = () => {
   const [circumference, setCircumference] = useState(0);
   const [percent, setPercent] = useState(0);
+  const [isUp, setIsUp] = useState(false);
 
+  // Auto-scroll function
+  const handleScroll = () => {
+    if (isUp) {
+      // Scroll up
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      // Scroll down
+      window.scroll({
+        top: document.body.offsetHeight,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  // Indicator function
   const init = () => {
     const radius = 24;
     const circumference = 2 * Math.PI * radius;
@@ -28,6 +38,8 @@ export const ScrollDownButton: React.FC = () => {
       document.documentElement.clientHeight;
     const scrollPercentage = (scrollTop / scrollHeight) * 100;
     setPercent(Math.round(scrollPercentage));
+    // This ternary operator set true/false to isUp based on the value of scrollTop
+    setIsUp(scrollTop >= 400);
   };
 
   useEffect(() => {
@@ -63,9 +75,10 @@ export const ScrollDownButton: React.FC = () => {
         />
       </svg>
       <button
-        className="absolute h-8 w-8 rounded-full border-2 border-yellow-100
-                bg-yellow-100 text-center text-lg text-black-100
-                  duration-300 hover:h-11 hover:w-11 hover:text-2xl"
+        className={clsx(
+          "absolute h-8 w-8 rounded-full border-2 border-yellow-100 bg-yellow-100 text-center text-lg text-black-100 transition-all duration-300 hover:h-11 hover:w-11 hover:text-2xl",
+          isUp ? "rotate-180" : ""
+        )}
         onClick={handleScroll}
       >
         ↓
