@@ -16,11 +16,14 @@ export const HomeHero: React.FC = () => {
     <div className="relative flex h-fit w-screen flex-col items-center bg-black-100 pb-96 pt-36">
       {isClient ? (
         <>
-          <Parallax speed={-5} className="-mb-16 flex w-full pl-[min(70vw)]">
+          <Parallax
+            speed={-5}
+            className="-mb-16 flex w-full pl-[min(75vw)] md:pl-[min(76vw)]"
+          >
             <ExpCircle />
           </Parallax>
-          <Parallax speed={-15} className="flex w-full pl-[min(5vw)]">
-            <ExpCircle />
+          <Parallax speed={-20} className="flex w-full pl-[min(5vw)]">
+            <ExpCircle className="h-14 w-14 md:h-28 md:w-28" />
           </Parallax>
           <div className="absolute mb-40 flex items-center justify-center">
             <MediaQuery maxWidth={639}>
@@ -42,7 +45,7 @@ export const HomeHero: React.FC = () => {
               />
             </MediaQuery>
           </div>
-          <div className="flex w-full flex-col pt-52 text-center leading-none lg:pt-60 xl:pt-24">
+          <div className="flex w-full flex-col pt-20 text-center leading-none lg:pt-20 xl:pt-14">
             <MediaQuery maxWidth={767}>
               <Parallax speed={25} className="z-10">
                 <RevealText
@@ -66,11 +69,14 @@ export const HomeHero: React.FC = () => {
               />
             </Parallax>
           </div>
-          <Parallax speed={90} className="flex w-full pl-[min(80vw)]">
-            <ExpCircle className="h-32 w-32" />
+          <Parallax
+            speed={90}
+            className="flex w-full pl-[min(85vw)] pt-[min(5vh)] md:pt-0"
+          >
+            <ExpCircle className="h-14 w-14 md:h-32 md:w-32" />
           </Parallax>
-          <Parallax speed={30} className="flex w-full pl-[min(20vw)]">
-            <ExpCircle className="h-8 w-8" />
+          <Parallax speed={40} className="flex w-full pl-[min(20vw)]">
+            <ExpCircle className="h-14 w-14" />
           </Parallax>
           <Parallax
             speed={60}
@@ -79,14 +85,14 @@ export const HomeHero: React.FC = () => {
             <ExpCircle />
           </Parallax>
           <Parallax
-            speed={20}
-            className="-mb-80 flex w-full pl-[min(20vw)] pt-[min(20vw)]"
+            speed={40}
+            className="-mb-80 flex w-full pl-[min(20vw)] pt-[min(80vw)] md:pt-[min(20vw)]"
           >
-            <ExpCircle className="h-40 w-40" />
+            <ExpCircle className="h-14 w-14 md:h-40 md:w-40" />
           </Parallax>
           <Parallax
-            speed={10}
-            className="-mb-96 flex w-full pl-[min(90vw)] pt-[min(20vw)]"
+            speed={90}
+            className="-mb-20 flex w-full pl-[min(90vw)] pt-[min(14vw)] md:-mb-96"
           >
             <ExpCircle className="h-14 w-14" />
           </Parallax>

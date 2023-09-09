@@ -7,7 +7,7 @@ export const Home03: React.FC = () => {
   return (
     <div
       className="relative flex h-fit w-screen flex-col
-              bg-black-100 px-[min(12vw)] xl:grid xl:grid-cols-2"
+              bg-black-100 px-[min(12vw)]"
     >
       <div>
         <div
@@ -21,9 +21,10 @@ export const Home03: React.FC = () => {
           className="font-march-evoked text-[min(6vw,52px)] tracking-widest"
         />
       </div>
+
       <div
-        className="space-y-8 pt-6 text-[min(3vw,18px)]
-                  tracking-widest text-white-200 xl:pt-10"
+        className="gap-12 space-y-6 pt-8 text-[min(3vw,18px)] tracking-widest
+                  text-white-200 xl:grid xl:grid-cols-2 xl:space-y-0 xl:pt-12"
       >
         {HOME_03_SENT_JP.map((item) => (
           <>
