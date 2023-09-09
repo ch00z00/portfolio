@@ -6,6 +6,7 @@ import { Article } from "@/types/blog";
 import { ArticleHero } from "./ArticleHero";
 import { ArticleBody } from "./ArticleBody";
 import { ArticleSidebar } from "./ArticleSidebar";
+import { ScrollButton } from "@/components/elements/Button";
 
 type Props = {
   title?: string;
@@ -41,6 +42,9 @@ export const ArticlePageLayout: React.FC<Props> = ({
         <div className="mt-6 flex flex-row md:mt-12">
           <ArticleBody article={article} />
           {/* <ArticleSidebar article={article} /> */}
+        </div>
+        <div className="fixed bottom-10 right-4 z-10 sm:right-14">
+          <ScrollButton />
         </div>
       </div>
     </>
