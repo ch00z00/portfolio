@@ -28,7 +28,7 @@ export const STRevealText: React.FC<Props> = ({
           scrollTrigger: {
             trigger: textRef.current,
             start: "top center-=5%",
-            toggleActions: "play none none reset",
+            toggleActions: "play none none none",
             once: true,
           },
           onComplete: () => {
