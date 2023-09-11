@@ -1,16 +1,18 @@
-import React, { useEffect, useRef } from "react";
+import React, { ReactNode, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { twMerge } from "tailwind-merge";
 import SplitType from "split-type";
 
 type Props = {
-  text: string;
+  text?: string;
+  children?: ReactNode;
   className?: string;
   onComplete?: () => void;
 };
 
 export const RevealText: React.FC<Props> = ({
   text,
+  children,
   className,
   onComplete,
 }) => {
@@ -53,6 +55,7 @@ export const RevealText: React.FC<Props> = ({
       )}
     >
       {text}
+      {children}
     </div>
   );
 };

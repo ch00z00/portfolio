@@ -21,7 +21,7 @@ export const Home04: React.FC = () => {
           className="font-march-evoked text-[min(6vw,52px)] tracking-widest"
         />
       </div>
-      <div
+      <STRevealText
         className="space-y-6 pt-6 text-[min(3vw,18px)]
                   tracking-widest text-white-200 xl:pt-10"
       >
@@ -35,7 +35,7 @@ export const Home04: React.FC = () => {
             </div>
           </>
         ))}
-      </div>
+      </STRevealText>
     </div>
   );
 };
