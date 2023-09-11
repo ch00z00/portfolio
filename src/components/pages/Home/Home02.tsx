@@ -1,4 +1,5 @@
 import { STRevealText } from "@/components/elements/Text";
+import { HOME_02_ITEMS } from "@/const";
 
 // TODO: Implement Text Distortion Effects.
 
@@ -17,39 +18,27 @@ export const Home02: React.FC = () => {
         </div>
         <STRevealText
           text="Skills"
-          className="font-march-evoked text-[min(6vw,52px)] tracking-widest"
+          className="font-march-evoked text-[min(6vw,96px)] tracking-widest"
         />
       </div>
       <div
-        className="space-y-8 pt-6 text-[min(2vw,16px)]
+        className="space-y-8 pt-6 font-sans text-[min(2vw,16px)]
                   tracking-widest text-yellow-100 xl:pt-10"
       >
-        <label className="flex flex-col">
-          <div>FRONTEND SKILLS:</div>
-          <div className="text-[min(3vw,24px)] text-white-200">
-            HTML, CSS(Tailwind CSS/ MUI/ Chakra UI/ SASS), JavaScript,
-            TypeScript, React, Next.js, GSAP, Three.js
-          </div>
-        </label>
-        <label className="flex flex-col">
-          <div>BACKEND SKILLS:</div>
-          <div className="text-[min(3vw,24px)] text-white-200">
-            Node.js, Python, Django, GraphQL, MySQL
-          </div>
-        </label>
-        <label className="flex flex-col">
-          <div>TOOLS & PLATFORMS:</div>
-          <div className="text-[min(3vw,24px)] text-white-200">
-            Git(GitHub), Figma, MacOS, Linux(Ubuntu, CentOS), Windows, AWS,
-            Docker, VSCode
-          </div>
-        </label>
-        <label className="flex flex-col">
-          <div>OTHER SKILLS:</div>
-          <div className="text-[min(3vw,24px)] text-white-200">
-            Drivers License(MT)
-          </div>
-        </label>
+        {HOME_02_ITEMS.map((item) => (
+          <>
+            <div key={item.title} className="">
+              <STRevealText
+                text={item.title}
+                className="font-sans text-[min(3vw,18px)] text-yellow-100"
+              />
+              <STRevealText
+                text={item.skills}
+                className="block text-[min(3vw,24px)] text-white-200"
+              />
+            </div>
+          </>
+        ))}
       </div>
     </div>
   );
