@@ -21,14 +21,13 @@ export const Home03: React.FC = () => {
           className="font-march-evoked text-[min(6vw,52px)] tracking-widest"
         />
       </div>
-
-      <div
-        className="gap-12 space-y-6 pt-8 text-[min(3vw,18px)] tracking-widest
-                  text-white-200 xl:grid xl:grid-cols-2 xl:space-y-0 xl:pt-12"
+      <STRevealText
+        className="gap-12 space-y-6 pt-8 font-sans text-[min(3vw,18px)]
+                  tracking-widest text-white-200 xl:grid xl:grid-cols-2 xl:space-y-0 xl:pt-12"
       >
         {HOME_03_SENT_JP.map((item) => (
           <>
-            <div key={item.title}>
+            <div key={item.title} className=" ">
               <div className="text-[min(4vw,24px)]">{item.title}</div>
               <div className="whitespace-pre-line text-yellow-100">
                 {item.sent}
@@ -36,7 +35,7 @@ export const Home03: React.FC = () => {
             </div>
           </>
         ))}
-      </div>
+      </STRevealText>
     </div>
   );
 };

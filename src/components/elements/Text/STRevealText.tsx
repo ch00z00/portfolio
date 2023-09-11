@@ -1,17 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import React, { ReactNode, useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import SplitType from "split-type";
 import { twMerge } from "tailwind-merge";
 
 type Props = {
-  text: string;
+  text?: string;
+  children?: ReactNode;
   className?: string;
   onComplete?: () => void;
 };
 
 export const STRevealText: React.FC<Props> = ({
   text,
+  children,
   className,
   onComplete,
 }) => {
@@ -64,6 +66,7 @@ export const STRevealText: React.FC<Props> = ({
       )}
     >
       {text}
+      {children}
     </div>
   );
 };
