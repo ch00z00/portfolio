@@ -18,7 +18,7 @@ export const Home01: React.FC = () => {
         </div>
         <STRevealText
           text="The End, So Far"
-          className="font-march-evoked text-[min(6vw,52px)] tracking-widest"
+          className="pr-20 font-march-evoked text-[min(6vw,96px)] leading-tight tracking-widest"
         />
       </div>
       <STRevealText

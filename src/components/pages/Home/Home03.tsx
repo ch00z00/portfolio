@@ -18,24 +18,28 @@ export const Home03: React.FC = () => {
         </div>
         <STRevealText
           text="Interests"
-          className="font-march-evoked text-[min(6vw,52px)] tracking-widest"
+          className="font-march-evoked text-[min(6vw,96px)] tracking-widest"
         />
       </div>
-      <STRevealText
+      <div
         className="gap-12 space-y-6 pt-8 font-sans text-[min(3vw,18px)]
                   tracking-widest text-white-200 xl:grid xl:grid-cols-2 xl:space-y-0 xl:pt-12"
       >
         {HOME_03_SENT_JP.map((item) => (
           <>
-            <div key={item.title} className=" ">
-              <div className="text-[min(4vw,24px)]">{item.title}</div>
-              <div className="whitespace-pre-line text-yellow-100">
-                {item.sent}
-              </div>
+            <div key={item.title}>
+              <STRevealText
+                text={item.title}
+                className="text-[min(3.4vw,24px)]"
+              />
+              <STRevealText
+                text={item.sent}
+                className="whitespace-pre-line font-sans text-[min(3vw,18px)] text-yellow-100"
+              />
             </div>
           </>
         ))}
-      </STRevealText>
+      </div>
     </div>
   );
 };

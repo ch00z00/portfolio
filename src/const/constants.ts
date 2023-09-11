@@ -13,6 +13,27 @@ export const HOME_01_SENT_EN =
 export const HOME_01_SENT_JP =
   "私は大学2年生頃からITを学び始め、同年から2年ほど日本国内のITベンチャー企業で長期インターン生のフロントエンドエンジニアとして働きました。\n しかし、そこで働く中で、業界における自身の市場価値について考えるきっかけがありました。そこで一度某企業を離れ、エンジニアとしての存在価値を考えました。\n その最中に利倉健太さんのポートフォリオサイトに出会い、3D表現や巧みなデザインを駆使した洗練されたウェブサイトのデザイン・開発に惹かれ始めました。それと同時に、自分の市場価値を見出すヒントを得ました。\n それから私は海外のサイトのような優れたウェブサイトを生み出せるエンジニアになりたいと思うようになりました。";
 
+export const HOME_02_ITEMS = [
+  {
+    title: "FRONTEND SKILLS:",
+    skills:
+      "HTML/ CSS(Tailwind CSS, MUI, Chakra UI, SASS)/ JavaScript/ TypeScript/ React/ Next.js/ GSAP/ Three.js",
+  },
+  {
+    title: "BACKEND SKILLS:",
+    skills: "Node.js/ Python/ Django/ GraphQL/ MySQL",
+  },
+  {
+    title: "TOOLS & PLATFORMS:",
+    skills:
+      "Git(GitHub)/ Figma/ MacOS/ Linux(Ubuntu/ CentOS)/ Windows/ AWS/ Docker/ VSCode",
+  },
+  {
+    title: "OTHER SKILLS:",
+    skills: "Drivers License(MT)/ General Social Skill",
+  },
+];
+
 // Revise the English version to match the Japanese text!
 export const HOME_03_SENT_EN = [
   {
