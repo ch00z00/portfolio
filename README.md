@@ -11,4 +11,11 @@ You can check my history, skills, interests and personality stuff.
 
 ## Techs & tools used on this site
 
-Next.js / TypeScript / GSAP / react-scroll-parallax / TailwindCSS
+**Basic**
+Next.js / TypeScript
+**Animation & Effects**
+GSAP / react-scroll-parallax
+**Style**
+TailwindCSS / clsx / tailwind-merge
+**Deploy**
+Vercel
