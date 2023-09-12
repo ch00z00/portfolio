@@ -74,7 +74,7 @@ export const HomeHero: React.FC = () => {
           </div>
           <Parallax
             speed={60}
-            className="flex w-full pl-[min(60vw)] pt-[min(12vh)] md:-mt-40 md:pl-[min(85vw)]"
+            className="z-10 flex w-full pl-[min(60vw)] pt-[min(12vh)] md:-mt-40 md:pl-[min(85vw)]"
           >
             <ExpCircle className="h-14 w-14 md:h-32 md:w-32" />
           </Parallax>
@@ -98,7 +98,7 @@ export const HomeHero: React.FC = () => {
           </Parallax>
           <Parallax
             speed={30}
-            className="-mb-20 flex w-full pl-[min(85vw)] pt-[min(5vh)] md:-mb-96 md:pl-[min(90vw)] md:pt-[min(20vh)]"
+            className="z-10 -mb-20 flex w-full pl-[min(85vw)] pt-[min(5vh)] md:-mb-96 md:pl-[min(90vw)] md:pt-[min(20vh)]"
           >
             <ExpCircle className="h-10 w-10 sm:h-14 sm:w-14" />
           </Parallax>
