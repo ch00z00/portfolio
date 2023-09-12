@@ -1,3 +1,8 @@
+<img
+  alt="website img"
+  src="./public/assets/website_img.png"
+  />
+
 ## Overview
 
 This is my portfolio site.
