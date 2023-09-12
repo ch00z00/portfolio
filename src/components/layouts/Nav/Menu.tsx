@@ -14,7 +14,7 @@ export const Menu: React.FC<Props> = ({ menuRef, isMenuOpen }) => {
     >
       <div
         className={clsx(
-          "flex flex-col items-center justify-center space-y-8 pt-[15vh]",
+          "flex flex-col items-center justify-center space-y-8 pt-[7vh]",
           isMenuOpen ? "visible" : "invisible duration-700"
         )}
       >
