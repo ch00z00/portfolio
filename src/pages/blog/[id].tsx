@@ -13,7 +13,7 @@ type Props = {
 };
 
 const ArticlePage: NextPage<Props> = ({ article }) => {
-  console.log(article)
+  console.log(article);
   return (
     <>
       <ArticlePageLayout article={article} />
@@ -34,12 +34,35 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<Props> = async (
   ctx: GetStaticPropsContext
 ) => {
-  if (ctx && ctx.params != undefined) {
-    const id = ctx.params.id;
-    const data: Article = await client.get({ endpoint: "blog", contentId: id });
+  try {
+    if (ctx && ctx.params != undefined) {
+      const id = ctx.params.id;
+
+      if (typeof id === "string") {
+        const data: Article = await client.get({
+          endpoint: "blog",
+          contentId: id,
+        });
+
+        if (data) {
+          return {
+            props: {
+              article: data,
+            },
+          };
+        }
+      }
+    }
+
+    // Error handling
+    throw new Error("Article not found.");
+  } catch (error) {
+    console.error("SSG error:", error);
+    // Redirect to 404 page
     return {
-      props: {
-        article: data,
+      redirect: {
+        destination: "../404.tsx",
+        permanent: false,
       },
     };
   }
