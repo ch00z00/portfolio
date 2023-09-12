@@ -32,8 +32,8 @@ export const HomeHero: React.FC = () => {
             <MediaQuery maxWidth={639}>
               <Image
                 src="/assets/pic_of_me.jpeg"
-                width={350}
-                height={350}
+                width={300}
+                height={300}
                 alt="picture of me"
                 className="rounded-xl blur-sm duration-700 ease-in-out hover:blur-none"
               />
@@ -48,7 +48,7 @@ export const HomeHero: React.FC = () => {
               />
             </MediaQuery>
           </div>
-          <div className="flex w-full flex-col pt-52 text-center leading-none lg:pt-20 xl:pt-14">
+          <div className="flex w-full flex-col pt-32 text-center leading-none sm:pt-32 lg:pt-20 xl:pt-14">
             <MediaQuery maxWidth={767}>
               <Parallax speed={25} className="z-10">
                 <RevealText
