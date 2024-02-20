@@ -4,56 +4,42 @@ import { CONTACT_ADDRESS, GITHUB_LINK, TWITTER_LINK } from "@/const";
 export const Contact: React.FC = () => {
   return (
     <div
-      className="relative flex w-screen flex-col items-center justify-between
-              bg-green-200 px-[min(12vw)] pb-32 pt-16 md:pb-40 md:pt-28 xl:flex-row xl:py-60"
+      className="relative flex w-screen flex-col items-center space-y-3
+              bg-black-200 px-[min(8vw)] pb-52 pt-20 text-white-200"
     >
-      <hr className="visible mb-6 w-[min(60vw)] text-black-200 xl:invisible" />
-      <div>
-        <div
-          className="mx-auto text-center font-march-evoked
-                    text-[min(13vw,168px)] tracking-wider text-black-200"
-        >
-          Links
+      <div className="flex w-2/3 items-center justify-between">
+        <div className="font-march-evoked text-[min(3vw,20px)] tracking-wider">
+          Social links:
         </div>
-        <div
-          className="flex w-[min(50vw,)] flex-col items-center justify-around
-                    space-y-2 xl:flex-row xl:space-y-0"
-        >
+        <div className="flex w-1/2 items-center justify-between lg:w-1/3">
           <RotateLinkButton
             blank={true}
             href={TWITTER_LINK}
-            bef_txt="X(Twitter)"
-            aft_txt="Open in a new tab"
-            className="text-black-100"
+            bef_txt="【X】"
+            aft_txt="Follow Me!"
           />
           <RotateLinkButton
             blank={true}
             href={GITHUB_LINK}
-            bef_txt="GitHub"
-            aft_txt="Open in a new tab"
-            className="text-black-100"
+            bef_txt="【GitHub】"
+            aft_txt="Follow Me!"
           />
         </div>
       </div>
-      <hr className="visible my-6 w-[min(60vw)] text-black-200 xl:invisible" />
-      <div className="flex flex-col">
-        <div
-          className="font-march-evoked text-[min(13vw,168px)]
-                    tracking-wider text-black-200"
-        >
-          Contact
+      <hr className="my-6 w-[min(60vw)] text-white-200/70" />
+      <div className="flex w-2/3 items-center justify-between">
+        <div className="font-march-evoked text-[min(3vw,20px)] tracking-wider">
+          Mail:
         </div>
         <RotateButton
           bef_txt={CONTACT_ADDRESS}
-          aft_txt="Copy to clipboard"
+          aft_txt="Copy → clipboard"
           result_txt="Copied!"
-          className="text-black-100"
           onClick={() => {
             navigator.clipboard.writeText(CONTACT_ADDRESS);
           }}
         />
       </div>
-      <hr className="visible mt-8 w-[min(60vw)] text-black-200 xl:invisible" />
     </div>
   );
 };
