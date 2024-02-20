@@ -13,7 +13,6 @@ type Props = {
 };
 
 const ArticlePage: NextPage<Props> = ({ article }) => {
-  console.log(article);
   return (
     <>
       <ArticlePageLayout article={article} />

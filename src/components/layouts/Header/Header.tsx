@@ -7,7 +7,7 @@ type HeaderProps = {
 
 export const Header: React.FC<HeaderProps> = ({ hamRef, isMenuOpen }) => {
   return (
-    <div className="flex h-full w-screen items-center justify-between px-10 sm:px-16">
+    <div className="flex h-full w-screen items-center justify-between px-[6vw] sm:px-[4vw]">
       <RectAnimButton text="HOME" href="/" />
       <div
         className="invisible flex w-fit items-center

@@ -1,7 +1,5 @@
 import { STRevealText } from "@/components/elements/Text";
-import { HOME_01_SENT_EN, HOME_01_SENT_JP } from "@/const";
-
-// TODO: Implement Text Distortion Effects.
+import { HOME_01_SENT_JP } from "@/const";
 
 export const Home01: React.FC = () => {
   return (
